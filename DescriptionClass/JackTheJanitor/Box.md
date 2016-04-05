@@ -1,13 +1,13 @@
 ## CLASS: Box
-	Description: Classe que descreve o funcionamento das caixas que o jogador deve escapar durante o jogo.  
+	Description: Class which describes the funcionality of the boxes that the player must escape during the game.  
 
 ### METHODS:
 	```c++
 	// -------------------------------------------------------------  
 	// Function: Box()  
-	// Description: Construtor da classe Box onde acontecem as inicializações das variáveis da classe.  
+	// Description: Box class builder where the inicialization of the class variables happen.  
 	// Parameters:  
-	//		string fileName;  		Nome do arquivo da imagem de fundo da caixa.
+	//		string fileName;  		Box landscape file name.
 	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
@@ -19,7 +19,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: ~Box() 
-	// Description: Destrutor da classe Box onde acontece a limpa dos arquivos de imagem das caixas.
+	// Description: Box class destructor where the box image files free themselves.
 	// Parameters: void
 	// Atributes: nothing
 	// Return: void  
@@ -32,9 +32,9 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: drawSelf()  
-	// Description: Desenha a caixa em uma posição específica da tela de acordo com os atributos da caixa.
+	// Description: Draws the box in a specific screen position according to the box attributes.
 	// Parameters: 
-	//		SDL_Surface *surface;		Ponteiro para a surface onde será desenhado o componente gráfico.
+	//		SDL_Surface *surface;		Pointer for the surface where the graphic component will be drawn.
 	// Atributes: nothing
 	// Return: void  
 	// ------------------------------------------------------------- 
@@ -46,7 +46,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: getPositionX()  
-	// Description: Retorna a posição no eixo X da caixa no momento.
+	// Description: Returns a position in the box X axis at the right moment. 
 	// Parameters: void
 	// Atributes: nothing
 	// Return: int  
@@ -59,7 +59,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: getPositionY()  
-	// Description: Retorna a posição no eixo Y da caixa no momento.
+	// Description: Returns a position in the box Y axis at the right moment. 
 	// Parameters: void
 	// Atributes: nothing
 	// Return: int  
@@ -72,7 +72,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: getSpeed()  
-	// Description: Retorna a velocidade que a caixa se move no momento.
+	// Description: Returns the speed which the box is moving at the right moment. 
 	// Parameters: void
 	// Atributes: nothing
 	// Return: int  
@@ -85,10 +85,10 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: setPosition()  
-	// Description: Retorna a velocidade que a caixa se move no momento.
+	// Description: Return the speed which the box is moving at the right moment.
 	// Parameters:
-	//		int x;			Insere o valor do eixo X da caixa no atributo que guarda essa informação.
-	//		int y;  		Insere o valor do eixo Y da caixa no atributo que guarda essa informação.
+	//		int x;			Insert the value of axis X of the box on the attribute that keeps the information
+	//		int y;  		Insert the value of axis Y of the box on the attribute that keeps the information	
 	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
@@ -100,12 +100,12 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: accelerate()  
-	// Description: Aumenta a velocidade da caixa no momento de queda.
+	// Description: Increase the speed of the box at the right moment.
 	// Parameters: void
 	// Atributes: nothing
 	// Return: void
 	// Observations:
-	// 		- Função não implementada.
+	// 		- Funtion not implemented
 	// -------------------------------------------------------------  
 	void accelerate() {
 		...
@@ -115,9 +115,9 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: fall()  
-	// Description: Controla a queda da caixa durante a execução do nível do jogo.
+	// Description: Control the box fall during the execution of the level of the game.
 	// Parameters:
-	//		int vector<Box*> grid[12];			Vetor que contém as posições das caixas na plataforma.
+	//		int vector<Box*> grid[12];			Vector that contain the box positions in the platform.
 	// Atributes: nothing
 	// Return: void
 	// -------------------------------------------------------------  
@@ -128,18 +128,19 @@
 	
 ### ATTRIBUTES:
 	```c++
-	SDL_Surface *box;		// Ponteiro para elementos gráficos de caixas.
-    float speed;			// Guarda a velocidade atual da caixa.
-	bool lyingDown;			// Contém a informação de se a caixa está caindo ou não.
-	int xPosition;			// Guarda a posição atual da caixa no eixo X.
-	int yPosition;			// Guarda a posição atual da caixa no eixo Y.
-	bool used;				// Contém a informação se a caixa já está em jogo ou não.
+	SDL_Surface *box;		// Pointer for box graphic elements.
+    float speed;			// Keep the actual speed of the box.
+	bool lyingDown;			// Contain information if the box is falling or not.
+	int xPosition;			// Keep the actual position of the box on axis X.
+	int yPosition;			// Keep the actual position of the box on axis Y.
+	bool used;				// Contain information if the box is already in the game or not.
 	```  
 
 ### CONST:
 	```c++
-	static const int BOX_WIDTH = 38;		// Largura em pixels de todas as caixas.
-	static const int BOX_HEIGHT = 38;		// Altura em pixels de todas as caixas.
-	static const int ACCELERATION = 1;		// Usada para incrementar a aceleração da caixa depois da criação de cada caixa.
-    static const int MAX_SPEED = 3;			// Guarda informação sobre a velocidade máxima que a caixa pode atingir.
+	static const int BOX_WIDTH = 38;		// All boxes pixel width.
+	static const int BOX_HEIGHT = 38;		// All boxes pixel height.
+	
+	static const int ACCELERATION = 1;		// Used for increments the box speed after the creation of each box.
+    static const int MAX_SPEED = 3;			// Keep the information about the maximum speed that the box can achieve.
 	```  
