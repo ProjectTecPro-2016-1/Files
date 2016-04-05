@@ -1,17 +1,73 @@
-CLASS: Level
-
-METHODS:
-	void drawSelf(SDL_Surface *surface);
-	Level(std::string filename);
-        ~Level();
-	vector<Box*> getBoxes();
-
-ATTRIBUTES:
-	SDL_Surface *level;
-	vector<Enemy*> enemies;
-	vector<Box*> boxes;
-	vector<Box*> grid[12];
-	static const int LEVEL_WIDTH = 456;
-        static const int LEVEL_HEIGHT = 456;
-        static const int LEVEL_X_OFFSET = 50;
-        static const int LEVEL_Y_OFFSET = 10;
+## CLASS: Level
+	Description: 
+	
+### METHODS:
+	```c++
+	// -------------------------------------------------------------  
+	// Function: Level()  
+	// Description: 
+	// Parameters:
+	//		string filename;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	Level(std::string filename) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: ~Level()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+    ~Level() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: drawSelf()  
+	// Description: 
+	// Parameters:
+	//		SDL_Surface *surface;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void drawSelf(SDL_Surface *surface) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: getBoxes()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: vector<Box*>  
+	// -------------------------------------------------------------  
+	vector<Box*> getBoxes() {
+		...
+	}
+	```  
+	
+### ATTRIBUTES:
+	```c++
+	SDL_Surface *level;				// Description
+	vector<Enemy*> enemies;			// Description
+	vector<Box*> boxes;				// Description
+	vector<Box*> grid[12];			// Description
+	```
+	
+### CONST:
+	```c++
+	static const int LEVEL_WIDTH = 456;			// Description
+	static const int LEVEL_HEIGHT = 456;		// Description
+	static const int LEVEL_X_OFFSET = 50;		// Description
+	static const int LEVEL_Y_OFFSET = 10;		// Description
+	```

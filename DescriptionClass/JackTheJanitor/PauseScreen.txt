@@ -1,11 +1,53 @@
-CLASS: PauseScreen
+## CLASS: PauseScreen
+	Description: 
+	
+### METHODS:
+	```c++
+	// -------------------------------------------------------------  
+	// Function: PauseScreen()  
+	// Description: 
+	// Parameters:
+	//		string filename;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	PauseScreen(std::string filename) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: ~PauseScreen()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+    ~PauseScreen() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: drawSelf()  
+	// Description: 
+	// Parameters:
+	//		SDL_Surface *surface;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void drawSelf(SDL_Surface *surface) {
+		...
+	}
+	```  
 
-METHODS:
-	void drawSelf(SDL_Surface *surface);
-	PauseScreen(std::string filename);
-        ~PauseScreen();
-
-ATTRIBUTES:
+### ATTRIBUTES:
+	```c++
 	SDL_Surface *pauseScreen;
 	static const int LEVEL_WIDTH = 854;
-        static const int LEVEL_HEIGHT = 480;
+    static const int LEVEL_HEIGHT = 480;
+	```  
+	
+### CONST:

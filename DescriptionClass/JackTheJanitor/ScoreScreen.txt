@@ -1,28 +1,158 @@
-CLASS: ScoreScreen
+## CLASS: ScoreScreen
+	Description: 
 
-METHODS:
-	ScoreScreen();
-    	~ScoreScreen();
-    	void drawSelf(SDL_Surface *surface);
-    	void popLine();
-    	void increaseScore(int value);
-    	void lines(int numero);
-    	void scoring(int value);
-	void updateSelf();  	
-	int getLine();
-    	int getScorePoints();
+### METHODS:
+	```c++
+	// -------------------------------------------------------------  
+	// Function: ScoreScreen()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	ScoreScreen() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: ~ScoreScreen()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	~ScoreScreen() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: drawSelf()  
+	// Description: 
+	// Parameters:
+	//		SDL_Surface *surface;
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void drawSelf(SDL_Surface *surface) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: popLine()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void popLine() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: increaseScore()  
+	// Description: 
+	// Parameters:
+	//		int value;
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void increaseScore(int value) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: lines()  
+	// Description: 
+	// Parameters:
+	//		int numero;
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void lines(int numero) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: scoring()  
+	// Description: 
+	// Parameters:
+	//		int value;
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void scoring(int value) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: updateSelf()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void updateSelf() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: getLine()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: int
+	// -------------------------------------------------------------  
+	int getLine() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: getScorePoints()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: int  
+	// -------------------------------------------------------------  
+	int getScorePoints() {
+		...
+	}
+	```  
+	
+### ATTRIBUTES:
+	```c++
+	SDL_Surface *armario;			// 
+	TTF_Font *scoreFont;			// 
+	SDL_Surface *scoreMessage;		// 
+	SDL_Surface *boxMessage;		// 
+	SDL_Color scoreTextColor;		// 
+	char scoreString[30];			// 
+	char lineString[30];			// 
+	int scorePoints;				// 
+	int lineLeft;					// 
+	```  
 
-ATTRIBUTES:
-    	SDL_Surface *armario;
-    	TTF_Font *scoreFont;
-    	SDL_Surface *scoreMessage;
-    	SDL_Surface *boxMessage;
-    	SDL_Color scoreTextColor;
-    	char scoreString[30];
-    	char lineString[30];
-    	int scorePoints;
-    	int lineLeft;
-	static const int SCORE_WIDTH = 282;
-    	static const int SCORE_HEIGHT = 456;
-    	static const int SCORE_X_OFFSET = 506;
-    	static const int SCORE_Y_OFFSET = 10;
+### CONST:
+	```c++
+	static const int SCORE_WIDTH = 282;			// 
+	static const int SCORE_HEIGHT = 456;		// 
+	static const int SCORE_X_OFFSET = 506;		// 
+	static const int SCORE_Y_OFFSET = 10;		// 
+	```  

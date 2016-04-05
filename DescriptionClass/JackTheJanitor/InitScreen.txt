@@ -1,11 +1,55 @@
-CLASS: InitScreen
+## CLASS: InitScreen
+	Description: 
 
-METHODS:
-	void drawSelf(SDL_Surface *surface);
-	InitScreen(std::string filename);
-	 ~InitScreen();
+### METHODS:
+	```c++
+	// -------------------------------------------------------------  
+	// Function: InitScreen()  
+	// Description: 
+	// Parameters:
+	//		string filename;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	InitScreen(std::string filename) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: ~InitScreen()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	~InitScreen() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: drawSelf()  
+	// Description: 
+	// Parameters:
+	//		SDL_Surface *surface;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void drawSelf(SDL_Surface *surface) {
+		...
+	}
+	```  
 
-ATRIBUTTES:
-	SDL_Surface *initScreen;
-	static const int LEVEL_WIDTH = 854;
-        static const int LEVEL_HEIGHT = 480;
+### ATRIBUTTES:
+	```c++
+	SDL_Surface *initScreen;		// Description
+	```  
+	
+### CONST:
+	```c++
+	static const int LEVEL_WIDTH = 854;			// Description
+    static const int LEVEL_HEIGHT = 480;		// Description
+	```  

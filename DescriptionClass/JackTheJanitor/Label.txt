@@ -1,14 +1,74 @@
-CLASS: Label
+## CLASS: Label
+	Description: 
 
-METHODS:
-	void drawSelf(SDL_Surface * surface);
-	bool wasClicked(int xMouse, int yMouse);
-	Label(std::string filename, int xPosition, int yPosition);
-	~Label();
-
-ATRIBUTTES:
-	SDL_Surface *label;
-	int xPosition;
-	int yPosition;
-	static const int LABEL_WIDTH = 178;
-	static const int LABEL_HEIGHT = 100;
+### METHODS:
+	```c++
+	// -------------------------------------------------------------  
+	// Function: Label()  
+	// Description: 
+	// Parameters:
+	//		string filename;		Description
+	//		int xPosition;			Description
+	//		int yPosition;			Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	Label(std::string filename, int xPosition, int yPosition) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: ~Label()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	~Label() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: drawSelf()  
+	// Description: 
+	// Parameters:
+	//		SDL_Surface * surface;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void drawSelf(SDL_Surface * surface) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: wasClicked()  
+	// Description: 
+	// Parameters:
+	//		int xMouse;		Description
+	//		int yMouse;		Description
+	// Atributes: nothing
+	// Return: bool
+	// -------------------------------------------------------------  
+	bool wasClicked(int xMouse, int yMouse) {
+		...
+	}
+	```  
+	
+### ATRIBUTTES:
+	```c++
+	SDL_Surface *label;			// Description
+	int xPosition;				// Description
+	int yPosition;				// Description
+	```  
+	
+### CONST:
+	```c++
+	static const int LABEL_WIDTH = 178;			// Description
+	static const int LABEL_HEIGHT = 100;		// Description
+	```  

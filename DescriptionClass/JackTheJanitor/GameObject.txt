@@ -1,9 +1,52 @@
-CLASS: GameObject
+## CLASS: GameObject
+	Description: 
 
-METHODS:
-	virtual ~GameObject();
-        void draw(SDL_Surface *surface);
-        void addChild(GameObject* child);
-ATRIBUTTES:
+### METHODS:
+	```c++
+	// -------------------------------------------------------------  
+	// Function: ~GameObject()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	virtual ~GameObject() {
+		...
+	}
+	``` 
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: draw()  
+	// Description: 
+	// Parameters:
+	//		SDL_Surface *surface;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void draw(SDL_Surface *surface) {
+		...
+	}
+	``` 
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: addChild()  
+	// Description: 
+	// Parameters:
+	//		GameObject* child;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void addChild(GameObject* child) {
+		...
+	}
+	``` 
+	
+### ATRIBUTTES:
+	```c++
 	vector<GameObject*> children;
 	virtual void drawSelf(SDL_Surface *surface) = 0;
+	``` 
+	
+### CONST:

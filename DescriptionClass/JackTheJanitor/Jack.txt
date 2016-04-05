@@ -1,28 +1,200 @@
-CLASS: Jack
+## CLASS: Jack
+	Description: 
 
-METHODS:
-	void drawSelf(SDL_Surface *surface);
-	Jack(std::string filename);
-        ~Jack();
-        bool isDead();
-        void die();
-	void setSpriteClips();
-        void move(int xBegin, int xRange, int yBegin, int yRange);
-        void pushMove(int v);
-        void popMove(int v);
-        void jump(Level* level);
-        int getXPosition();
-        int getYPosition();
-        void pushBox();
+### METHODS:
+	```c++
+	// -------------------------------------------------------------  
+	// Function: Jack()  
+	// Description: 
+	// Parameters:
+	//		string filename;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	Jack(std::string filename) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: ~Jack()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	~Jack() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: drawSelf()  
+	// Description: 
+	// Parameters:
+	//		SDL_Surface * surface;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void drawSelf(SDL_Surface *surface)
+	 {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: isDead()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: bool  
+	// -------------------------------------------------------------  
+	bool isDead() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: die()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void die() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: setSpriteClips()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void setSpriteClips() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: move()  
+	// Description: 
+	// Parameters:
+	//		int xBegin;		Description
+	//		int xRange;		Description
+	//		int yBegin;		Description
+	//		int yRange;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void move(int xBegin, int xRange, int yBegin, int yRange) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: pushMove()  
+	// Description: 
+	// Parameters:
+	//		int v;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void pushMove(int v) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: popMove()  
+	// Description: 
+	// Parameters:
+	//		int v;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void popMove(int v) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: jump()  
+	// Description: 
+	// Parameters:
+	//		Level * level;		Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void jump(Level * level) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: getXPosition()  
+	// Description: 
+	// Parameters:
+	// Atributes: nothing
+	// Return: int  
+	// -------------------------------------------------------------  
+	int getXPosition() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: getYPosition()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: int  
+	// -------------------------------------------------------------  
+	int getYPosition() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: pushBox()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void pushBox() {
+		...
+	}
+	```  
 
-ATRIBUTTES:
-	SDL_Surface *jack;
-	int x_position;
-	int y_position;
-	bool dead;
-	int lastMove;
-	int lastButOneMove;
-	int frame; //for animation
-	static const int ACCELERATION = 1;
-        static const int JACK_WIDTH = 38;
-        static const int JACK_HEIGHT = 57;
+### ATRIBUTTES:
+	```c++
+	SDL_Surface *jack;			// Description
+	int x_position;				// Description
+	int y_position;				// Description
+	bool dead;					// Description
+	int lastMove;				// Description
+	int lastButOneMove;			// Description
+	int frame; //for animation	// Description
+	```  
+	
+### CONST:	
+	```c++
+	static const int ACCELERATION = 1;		// Description
+	static const int JACK_WIDTH = 38;		// Description
+	static const int JACK_HEIGHT = 57;		// Description
+	```  

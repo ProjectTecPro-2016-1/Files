@@ -1,13 +1,89 @@
-CLASS: RawImage
-
-METHODS:
-	RawImage();
-        ~RawImage();
-        void load(const string& name);
-        int width() const;
-        int height() const;
-        SDL_Surface *pixels() const;
-
-ATTRIBUTES:
-	 SDL_Surface *_pixels;
+## CLASS: RawImage
+	Description: 
 	
+### METHODS:
+	```c++
+	// -------------------------------------------------------------  
+	// Function: RawImage()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	RawImage() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: ~RawImage()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	~RawImage() {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: load()  
+	// Description: 
+	// Parameters:
+	// 		const string &name;			Description
+	// Atributes: nothing
+	// Return: void  
+	// -------------------------------------------------------------  
+	void load(const string& name) {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: width()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: int
+	// -------------------------------------------------------------  
+	int width() const {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: height()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: int
+	// -------------------------------------------------------------  
+	int height() const {
+		...
+	}
+	```  
+	
+	```c++
+	// -------------------------------------------------------------  
+	// Function: pixels()  
+	// Description: 
+	// Parameters: void
+	// Atributes: nothing
+	// Return: SDL_Surface *	
+	// -------------------------------------------------------------  
+	SDL_Surface *pixels() const {
+		...
+	}
+	```	 
+
+### ATTRIBUTES:
+	```c++
+	SDL_Surface *_pixels;		// Description
+	```
+
+### CONST:
