@@ -1,6 +1,5 @@
 ## CLASS: Enemy
-	Description: Classe que descreve o funcionamento dos inimigos durante o jogo. 
-//					Class that describes the enemies function during the game.	
+	Description: Class that describes the enemies function during the game.	 					
 
 ### METHODS:
 	```c++
@@ -16,10 +15,10 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
-	// Function: ~Enemy() 
+	// Function: ~Enemy()
 	// Description: Enemy class destructor where the landscape image files free themselves.
 	// Parameters: void
 	// Atributes: nothing
@@ -29,7 +28,7 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: setSpriteClips()  
@@ -42,23 +41,22 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: drawSelf()  
 	// Description: Selects the current motion frame and draws the enemies image in specific position
 	//				on the screen according to the enemy attributes.
-	// Parameters: 
-	//		SDL_Surface *surface;  		
-	Pointer for surface where the graphic component will be drawn .
+	// Parameters:
+	//		SDL_Surface *surface;  		Pointer for surface where the graphic component will be drawn .
 	// Atributes: nothing
 	// Return: void  
-	// ------------------------------------------------------------- 
+	// -------------------------------------------------------------
 	void drawSelf(SDL_Surface *surface) {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: move()  
@@ -71,7 +69,7 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: throwBox()  
@@ -96,7 +94,7 @@
 	int movesLeft;					// Controls the enemy movements to the right.
 	int moveDirection;				// Controls the movements direction horizontally.
 	```  
-	
+
 ### CONST
 	```c++
 	static const int ENEMY_WIDTH = 38;			// Contains the enemies width from each position occupied on screen.
