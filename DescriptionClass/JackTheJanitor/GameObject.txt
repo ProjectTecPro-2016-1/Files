@@ -52,10 +52,8 @@
 	// Atributes: nothing
 	// Return: void
 	// -------------------------------------------------------------
-	void drawSelf(SDL_Surface *surface) {
-		...
-	}
-	```  
+	virtual void drawSelf(SDL_Surface *surface) == 0;
+	```
 
 ### ATRIBUTTES:
 	```c++
