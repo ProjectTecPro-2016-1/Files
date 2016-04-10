@@ -1,13 +1,13 @@
 ## CLASS: SDLUtil
-	Description: Classe que desenha as imagens dos elementos em posições determinadas da tela.
+	Description: Class that draws pictures of elements on a specific position in screen.
 	
 ### METHODS:
     ```c++
 	// -------------------------------------------------------------  
 	// Function: loadImage()  
-	// Description: Carrega imagem de algum elemento para desenhar na tela.
+	// Description: Load image of some element to draw on screen.
 	// Parameters:
-	//		string filename;			Nome do arquivo da imagem que será desenhada no elemento.
+	//		string filename;			Name of image file that will be drwan in element.
 	// Atributes: nothing
 	// Return: void
 	// ------------------------------------------------------------- 
@@ -19,13 +19,13 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: applySurface()  
-	// Description: Aplica de a interface de acordo com os componentes gráficos.
+	// Description: Apply the interface according to grafic components. 
 	// Parameters:
-	//		int x;								Posição no eixo X onde o elemento será desenhado.
-	//		int y;								Posição no eixo Y onde o elemento será desenhado.
-	//		SDL_Surface *source;				Ponteiro para o elemento que conterá o desenho.
-	//		SDL_Surface *destination;			Ponteiro para o local onde o elemento estará disposto.
-	//		SDL_Rect* clip;						Não se sabe.
+	//		int x;								Position on the X axis where the element will be draw.
+	//		int y;								Position on the Y axis where where the element will be draw.
+	//		SDL_Surface *source;				Pointer to the element that will contain the drawning.
+	//		SDL_Surface *destination;			Pointer to the location where the element will be disposed.
+	//		SDL_Rect* clip;						Not know. 
 	// Atributes: nothing
 	// Return: void
 	// ------------------------------------------------------------- 

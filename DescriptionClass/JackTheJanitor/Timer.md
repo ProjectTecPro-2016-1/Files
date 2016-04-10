@@ -1,11 +1,11 @@
 ## CLASS: Timer
-	Description: Classe que controla o funcionamento do tempo no jogo.  
+	Description: Class that controls the action of the time on game.
 
 ### METHODS:
 	```c++
 	// -------------------------------------------------------------  
 	// Function: Timer()  
-	// Description: Construtor da classe Timer onde acontecem as inicializações dos atributos da classe.  
+	// Description: Class Time constructor where that happens attributes  inicialization.
 	// Parameters:  void
 	// Atributes: nothing
 	// Return: void  
@@ -18,7 +18,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: start()  
-	// Description: Altera os atributos de status dos jogos afim de iniciar um novo jogo.  
+	// Description: Change the status of attributes on game  in order to start a new game.  
 	// Parameters:  void
 	// Atributes: nothing
 	// Return: void  
@@ -31,7 +31,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: stop()  
-	// Description: Altera os atributos de status do jogo afim de paralizar.  
+	// Description: Change the status of attributes on game in order to paralyze.
 	// Parameters:  void
 	// Atributes: nothing
 	// Return: void  
@@ -44,7 +44,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: pause()  
-	// Description: Altera os atributos de status do jogo afim de pausar.  
+	// Description: Change the status of attributes on game in order to stop.
 	// Parameters:  void
 	// Atributes: nothing
 	// Return: void  
@@ -57,7 +57,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: unpause()  
-	// Description: Altera os atributos de status do jogo afim de tirar a pausa.  
+	// Description: Change the status of attributes on game in order to take the "pause".
 	// Parameters:  void
 	// Atributes: nothing
 	// Return: void  
@@ -70,9 +70,9 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: waitDiff()  
-	// Description: Função que gera um delay na transição em um frame e outro carregamento.
+	// Description: Function that generates a delay between frames.
 	// Parameters:
-	//		float ratioFPS;  		Tempo que durará o delay.
+	//		float ratioFPS;  		Time of delay.
 	// Atributes: nothing
 	// Return: void  
 	// ------------------------------------------------------------- 
@@ -84,7 +84,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: get_ticks()  
-	// Description: Retorna o instante do jogo atual.
+	// Description: Returns the instant of actual game.
 	// Parameters: void
 	// Atributes: nothing
 	// Return: int  
@@ -97,7 +97,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: is_started()  
-	// Description: Retorna a informação de se o jogo está iniciado ou não.
+	// Description: Returns the information if the game has been initialized or not.
 	// Parameters: void
 	// Atributes: nothing
 	// Return: bool  
@@ -110,7 +110,7 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: is_paused()  
-	// Description: Retorna a informação de se o jogo está pausado ou não.
+	// Description: Returns the information is the game is paused or not.
 	// Parameters: void
 	// Atributes: nothing
 	// Return: bool  
@@ -122,10 +122,10 @@
 	
 ### ATTRIBUTES:
 	```c++
-	int startTicks;			// Guarda o tempo que o jogo durou ou está durando.
-	int pausedTicks;		// Guarda o tempo que o jogo durou a pausa do jogo.
-	bool paused;			// Contém informação de se o jogo está pausado ou não.
-	bool started;			// Contém informação de se o jogo está iniciado ou não.
+	int startTicks;			// Keeps the time of the game or the time it is lasting.
+	int pausedTicks;		// Keep the time of long last pause.
+	bool paused;			// Contains a information if the game is paused or not.
+	bool started;			// Contains a information if the game has been initialized or not.
 	```  
 
 ### CONST:
