@@ -1,15 +1,37 @@
 ## CLASS: Game
-	Description: Classe que efetua todas as operações necessárias de controle do jogo. 
-	Observation: Classe chamada após a Main.
+	Description: It's the most important class of the project. It's does all operation need to game start and run, and has control of the operations in the game.
+	Observation: Main.cpp call this class.
 	
 ### METHODS:
+	```c++
+	// -------------------------------------------------------------  
+	// Function: initGUI()
+	// Description: Necessária para centralizar a inicialização das 
+					diretivas da interface gráfica controlada pela SDL.
+	// Return: void  
+	// -------------------------------------------------------------  
+	void initGUI() {
+		...
+	}
+	```  
+
+	```c++
+	// -------------------------------------------------------------  
+	// Function: closeGUI()
+	// Description: Centraliza a finalização de plugins das bibliotecas 
+	//				do SDL de audio e interface gráfica.
+	// Return: void  
+	// -------------------------------------------------------------  
+	void closeGUI() {
+		...
+	}
+	``` 
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: init()
 	// Description: Função que inicializa os atributos do jogo e chama função para iniciar o 
 	//				gerencialmento das propriedades gráficas
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void init() {
@@ -20,9 +42,8 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: loop()
-	// Description: Gerar o ciclo 
-	// Parameters: void
-	// Atributes: nothing
+	// Description: Gerar o ciclo de funcionamento do jogo. É necessária para manter o controle da execução 
+	//				dentro de uma função.
 	// Return: void  
 	// -------------------------------------------------------------  
 	void loop() {
@@ -34,8 +55,6 @@
 	// -------------------------------------------------------------  
 	// Function: shutdown()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void shutdown() {
@@ -47,8 +66,6 @@
 	// -------------------------------------------------------------  
 	// Function: wonGameScreen()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void wonGameScreen() {
@@ -60,8 +77,6 @@
 	// -------------------------------------------------------------  
 	// Function: showOptionsScreen()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void showOptionsScreen() {
@@ -73,8 +88,6 @@
 	// -------------------------------------------------------------  
 	// Function: gameOvering()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void gameOvering() {
@@ -86,8 +99,6 @@
 	// -------------------------------------------------------------  
 	// Function: gameOverScreenDraw()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void gameOverScreenDraw() {
@@ -99,8 +110,6 @@
 	// -------------------------------------------------------------  
 	// Function: gameOverScreenLoop()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void gameOverScreenLoop() {
@@ -112,8 +121,6 @@
 	// -------------------------------------------------------------  
 	// Function: pausingLevel()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void pausingLevel() {
@@ -125,8 +132,6 @@
 	// -------------------------------------------------------------  
 	// Function: pauseScreenDraw()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void pauseScreenDraw() {
@@ -138,8 +143,6 @@
 	// -------------------------------------------------------------  
 	// Function: pauseScreenLoop()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void pauseScreenLoop() {
@@ -151,8 +154,6 @@
 	// -------------------------------------------------------------  
 	// Function: initializingScreen()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void initializingScreen() {
@@ -164,8 +165,6 @@
 	// -------------------------------------------------------------  
 	// Function: initScreenDraw()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void initScreenDraw() {
@@ -177,47 +176,17 @@
 	// -------------------------------------------------------------  
 	// Function: initScreenLoop()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void initScreenLoop() {
 		...
 	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: initGUI()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void initGUI() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: closeGUI()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void closeGUI() {
-		...
-	}
-	```  
+	```   
 
 	```c++
 	// -------------------------------------------------------------  
 	// Function: loadCommonResources()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void loadCommonResources() {
@@ -229,8 +198,6 @@
 	// -------------------------------------------------------------  
 	// Function: releaseCommonResources()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void releaseCommonResources() {
@@ -242,8 +209,6 @@
 	// -------------------------------------------------------------  
 	// Function: loadProfile()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void loadProfile() {
@@ -255,8 +220,6 @@
 	// -------------------------------------------------------------  
 	// Function: saveProfile()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void saveProfile() {
@@ -268,8 +231,6 @@
 	// -------------------------------------------------------------  
 	// Function: updateTimeStep()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void updateTimeStep() {
@@ -283,7 +244,6 @@
 	// Description: 
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void handleEventMouseButtonUp(SDL_Event & event) {
@@ -297,7 +257,6 @@
 	// Description: 
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void handleEventMouseButtonDown(SDL_Event & event) {
@@ -311,7 +270,6 @@
 	// Description: 
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void handleEventKeyDown(SDL_Event & event) {
@@ -325,7 +283,6 @@
 	// Description: 
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void handleEventKeyUp(SDL_Event & event) {
@@ -339,7 +296,6 @@
 	// Description: 
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void handleEventType(SDL_Event & event) {
@@ -351,8 +307,6 @@
 	// -------------------------------------------------------------  
 	// Function: handleEvents()
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void handleEvents() {
@@ -364,8 +318,6 @@
 	// -------------------------------------------------------------  
 	// Function: runAI()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void runAI() {
@@ -377,8 +329,6 @@
 	// -------------------------------------------------------------  
 	// Function: runPhysics()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void runPhysics() {
@@ -390,8 +340,6 @@
 	// -------------------------------------------------------------  
 	// Function: update()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void update() {
@@ -403,8 +351,6 @@
 	// -------------------------------------------------------------  
 	// Function: recieveNetworkData()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void recieveNetworkData() {
@@ -416,8 +362,6 @@
 	// -------------------------------------------------------------  
 	// Function: sendNetworkData()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void sendNetworkData() {
@@ -429,8 +373,6 @@
 	// -------------------------------------------------------------  
 	// Function: draw()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void draw() {
@@ -442,8 +384,6 @@
 	// -------------------------------------------------------------  
 	// Function: loadLevel()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void loadLevel() {
@@ -455,8 +395,6 @@
 	// -------------------------------------------------------------  
 	// Function: releaseLevel()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void releaseLevel() {
@@ -468,8 +406,6 @@
 	// -------------------------------------------------------------  
 	// Function: checkIfSkip()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: int  
 	// -------------------------------------------------------------  
 	int checkIfSkip() {
@@ -481,8 +417,6 @@
 	// -------------------------------------------------------------  
 	// Function: isGameFinished()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: bool  
 	// -------------------------------------------------------------  
 	bool isGameFinished() {
@@ -494,8 +428,6 @@
 	// -------------------------------------------------------------  
 	// Function: isLevelFinished()  
 	// Description: 
-	// Parameters: void
-	// Atributes: nothing
 	// Return: bool  
 	// -------------------------------------------------------------  
 	bool isLevelFinished() {
