@@ -8,7 +8,7 @@
 	// Function: ResourcesManager()  
 	// Description: ResourcesManager class builder.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  
@@ -22,7 +22,7 @@
 	// Function: getInstance()  
 	// Description: Keep instance of a pointer resource.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: static ResourcesManager * 
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  
@@ -37,7 +37,7 @@
 	// Description:
 	// Parameters:
 	// 		const string &name;
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: RawImage *
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  
@@ -52,7 +52,7 @@
 	// Description:
 	// Parameters:
 	// 		RawImage *image;
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  
@@ -67,7 +67,7 @@
 	// Description:
 	// Parameters:
 	// 		const string &resourcesDescription;
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void
 	// Observation: Without implementation.	
 	// -------------------------------------------------------------  

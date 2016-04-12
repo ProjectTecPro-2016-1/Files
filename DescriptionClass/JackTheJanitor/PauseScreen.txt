@@ -8,7 +8,7 @@
 	// Description: 
 	// Parameters:
 	//		string filename;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	PauseScreen(std::string filename) {
@@ -21,7 +21,7 @@
 	// Function: ~PauseScreen()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
     ~PauseScreen() {
@@ -35,7 +35,7 @@
 	// Description: 
 	// Parameters:
 	//		SDL_Surface *surface;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void drawSelf(SDL_Surface *surface) {

@@ -8,7 +8,7 @@
 	// Description: 
 	// Parameters:
 	//		const string &name;			// Name of something that will be load.
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void 
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  

@@ -7,7 +7,7 @@
 	// Function: Timer()  
 	// Description: Construtor da classe Timer onde acontecem as inicializações dos atributos da classe.  
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	Timer() {
@@ -20,7 +20,7 @@
 	// Function: start()  
 	// Description: Altera os atributos de status dos jogos afim de iniciar um novo jogo.  
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void start() {
@@ -33,7 +33,7 @@
 	// Function: stop()  
 	// Description: Altera os atributos de status do jogo afim de paralizar.  
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
    	void stop() {
@@ -46,7 +46,7 @@
 	// Function: pause()  
 	// Description: Altera os atributos de status do jogo afim de pausar.  
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
     void pause() {
@@ -59,7 +59,7 @@
 	// Function: unpause()  
 	// Description: Altera os atributos de status do jogo afim de tirar a pausa.  
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
     void unpause() {
@@ -73,7 +73,7 @@
 	// Description: Função que gera um delay na transição em um frame e outro carregamento.
 	// Parameters:
 	//		float ratioFPS;  		Tempo que durará o delay.
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// ------------------------------------------------------------- 
     void waitDiff(float ratioFPS) {
@@ -86,7 +86,7 @@
 	// Function: get_ticks()  
 	// Description: Retorna o instante do jogo atual.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: int  
 	// ------------------------------------------------------------- 
 	int get_ticks() {
@@ -99,7 +99,7 @@
 	// Function: is_started()  
 	// Description: Retorna a informação de se o jogo está iniciado ou não.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: bool  
 	// ------------------------------------------------------------- 
 	bool is_started() {
@@ -112,7 +112,7 @@
 	// Function: is_paused()  
 	// Description: Retorna a informação de se o jogo está pausado ou não.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: bool  
 	// ------------------------------------------------------------- 
     bool is_paused() {

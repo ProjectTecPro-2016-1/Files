@@ -7,7 +7,7 @@
 	// Function: ScoreScreen()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	ScoreScreen() {
@@ -20,7 +20,7 @@
 	// Function: ~ScoreScreen()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	~ScoreScreen() {
@@ -34,7 +34,7 @@
 	// Description: 
 	// Parameters:
 	//		SDL_Surface *surface;
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void drawSelf(SDL_Surface *surface) {
@@ -47,7 +47,7 @@
 	// Function: popLine()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void popLine() {
@@ -61,7 +61,7 @@
 	// Description: 
 	// Parameters:
 	//		int value;
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void increaseScore(int value) {
@@ -75,7 +75,7 @@
 	// Description: 
 	// Parameters:
 	//		int numero;
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void lines(int numero) {
@@ -89,7 +89,7 @@
 	// Description: 
 	// Parameters:
 	//		int value;
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void scoring(int value) {
@@ -102,7 +102,7 @@
 	// Function: updateSelf()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void updateSelf() {
@@ -115,7 +115,7 @@
 	// Function: getLine()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: int
 	// -------------------------------------------------------------  
 	int getLine() {
@@ -128,7 +128,7 @@
 	// Function: getScorePoints()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: int  
 	// -------------------------------------------------------------  
 	int getScorePoints() {

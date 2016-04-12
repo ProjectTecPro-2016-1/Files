@@ -8,7 +8,7 @@
 	// Description: Carrega imagem de algum elemento para desenhar na tela.
 	// Parameters:
 	//		string filename;			Nome do arquivo da imagem que será desenhada no elemento.
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void
 	// ------------------------------------------------------------- 
 	static SDL_Surface *loadImage(std::string filename) {
@@ -26,7 +26,7 @@
 	//		SDL_Surface *source;				Ponteiro para o elemento que conterá o desenho.
 	//		SDL_Surface *destination;			Ponteiro para o local onde o elemento estará disposto.
 	//		SDL_Rect* clip;						Não se sabe.
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void
 	// ------------------------------------------------------------- 
 	static void applySurface(int x, int y, SDL_Surface *source, SDL_Surface *destination, SDL_Rect* clip = NULL) {

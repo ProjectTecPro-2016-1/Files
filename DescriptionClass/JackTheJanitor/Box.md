@@ -8,7 +8,7 @@
 	// Description: Box class builder where the inicialization of the class variables happen.  
 	// Parameters:  
 	//		string fileName;  		Box landscape file name.
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	Box(std::string filename) {
@@ -21,7 +21,7 @@
 	// Function: ~Box() 
 	// Description: Box class destructor where the box image files free themselves.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	~Box() {
@@ -35,7 +35,7 @@
 	// Description: Draws the box in a specific screen position according to the box attributes.
 	// Parameters: 
 	//		SDL_Surface *surface;		Pointer for the surface where the graphic component will be drawn.
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// ------------------------------------------------------------- 
 	void drawSelf(SDL_Surface *surface) {
@@ -48,7 +48,7 @@
 	// Function: getPositionX()  
 	// Description: Returns a position in the box X axis at the right moment. 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: int  
 	// -------------------------------------------------------------  
 	int getPositionX() {
@@ -61,7 +61,7 @@
 	// Function: getPositionY()  
 	// Description: Returns a position in the box Y axis at the right moment. 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: int  
 	// -------------------------------------------------------------  
 	int getPositionY() {
@@ -74,7 +74,7 @@
 	// Function: getSpeed()  
 	// Description: Returns the speed which the box is moving at the right moment. 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: int  
 	// -------------------------------------------------------------  
 	int getSpeed() {
@@ -89,7 +89,7 @@
 	// Parameters:
 	//		int x;			Insert the value of axis X of the box on the attribute that keeps the information
 	//		int y;  		Insert the value of axis Y of the box on the attribute that keeps the information	
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void setPosition(int x, int y) {
@@ -102,7 +102,7 @@
 	// Function: accelerate()  
 	// Description: Increase the speed of the box at the right moment.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void
 	// Observations:
 	// 		- Funtion not implemented
@@ -118,7 +118,7 @@
 	// Description: Control the box fall during the execution of the level of the game.
 	// Parameters:
 	//		int vector<Box*> grid[12];			Vector that contain the box positions in the platform.
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------  
 	void fall(vector<Box*> grid[12]) {
