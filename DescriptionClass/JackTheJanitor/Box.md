@@ -15,10 +15,10 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
-	// Function: ~Box() 
+	// Function: ~Box()
 	// Description: Box class destructor where the box image files free themselves.
 	// Parameters: void
 	// Attributes: nothing
@@ -28,25 +28,25 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: drawSelf()  
 	// Description: Draws the box in a specific screen position according to the box attributes.
-	// Parameters: 
+	// Parameters:
 	//		SDL_Surface *surface;		Pointer for the surface where the graphic component will be drawn.
 	// Attributes: nothing
 	// Return: void  
-	// ------------------------------------------------------------- 
-	void drawSelf(SDL_Surface *surface) {
+	// -------------------------------------------------------------
+	void drawSelf(SDL_Surface * surface) {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: getPositionX()  
-	// Description: Returns a position in the box X axis at the right moment. 
+	// Description: Returns a position in the box X axis at the right moment.
 	// Parameters: void
 	// Attributes: nothing
 	// Return: int  
@@ -55,11 +55,11 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: getPositionY()  
-	// Description: Returns a position in the box Y axis at the right moment. 
+	// Description: Returns a position in the box Y axis at the right moment.
 	// Parameters: void
 	// Attributes: nothing
 	// Return: int  
@@ -68,11 +68,11 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: getSpeed()  
-	// Description: Returns the speed which the box is moving at the right moment. 
+	// Description: Returns the speed which the box is moving at the right moment.
 	// Parameters: void
 	// Attributes: nothing
 	// Return: int  
@@ -81,14 +81,14 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: setPosition()  
 	// Description: Return the speed which the box is moving at the right moment.
 	// Parameters:
 	//		int x;			Insert the value of axis X of the box on the attribute that keeps the information
-	//		int y;  		Insert the value of axis Y of the box on the attribute that keeps the information	
+	//		int y;  		Insert the value of axis Y of the box on the attribute that keeps the information
 	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
@@ -96,7 +96,7 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: accelerate()  
@@ -111,7 +111,7 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: fall()  
@@ -125,10 +125,10 @@
 		...
 	}
 	```  
-	
+
 ### ATTRIBUTES:
 	```c++
-	SDL_Surface *box;		// Pointer for box graphic elements.
+	SDL_Surface * box;		// Pointer for box graphic elements.
     float speed;			// Keep the actual speed of the box.
 	bool lyingDown;			// Contain information if the box is falling or not.
 	int xPosition;			// Keep the actual position of the box on axis X.
@@ -140,7 +140,6 @@
 	```c++
 	static const int BOX_WIDTH = 38;		// All boxes pixel width.
 	static const int BOX_HEIGHT = 38;		// All boxes pixel height.
-	
 	static const int ACCELERATION = 1;		// Used for increments the box speed after the creation of each box.
     static const int MAX_SPEED = 3;			// Keep the information about the maximum speed that the box can achieve.
 	```  

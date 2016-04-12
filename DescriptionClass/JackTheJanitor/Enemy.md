@@ -52,7 +52,7 @@
 	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------
-	void drawSelf(SDL_Surface *surface) {
+	void drawSelf(SDL_Surface * surface) {
 		...
 	}
 	```  
@@ -86,7 +86,7 @@
 
 ### ATTRIBUTES:
 	```c++
-	SDL_Surface *enemy;				// Pointer for enemy graphic elements.
+	SDL_Surface * enemy;			// Pointer for enemy graphic elements.
 	SDL_Rect spriteClips[8];		// Contains the dimensions of each motion frame.
 	int frame;						// Keeps the actual frame value.
 	int x_position;					// Axis X position where the enemy is localizated.
@@ -99,3 +99,4 @@
 	```c++
 	static const int ENEMY_WIDTH = 38;			// Contains the enemies width from each position occupied on screen.
 	static const int ENEMY_HEIGHT = 57;			// Contains the enemies height from each position occupied on screen.
+	```  

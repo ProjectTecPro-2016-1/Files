@@ -1,18 +1,18 @@
 ## CLASS: Resource
 	Description: Virtual class. Need to do the implementation in subclasses.
-	
+
 ### METHODS:
 	```c++
 	// -------------------------------------------------------------  
 	// Function: load()  
-	// Description: 
+	// Description:
 	// Parameters:
 	//		const string &name;			// Name of something that will be load.
 	// Attributes: nothing
-	// Return: void 
+	// Return: void
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  
-	virtual void load(const string &name) = 0 {
+	virtual void load(const string & name) = 0 {
 		...
 	}
 	```  

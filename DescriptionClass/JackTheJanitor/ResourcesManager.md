@@ -16,21 +16,21 @@
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: getInstance()  
 	// Description: Keep instance of a pointer resource.
 	// Parameters: void
 	// Attributes: nothing
-	// Return: static ResourcesManager * 
+	// Return: static ResourcesManager *
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  
-	static ResourcesManager *getInstance() {
+	static ResourcesManager * getInstance() {
 		...
 	}
 	```  
-	
+
     ```c++
 	// -------------------------------------------------------------  
 	// Function: getImage()  
@@ -41,11 +41,11 @@
 	// Return: RawImage *
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  
-	RawImage* getImage(const string &name) {
+	RawImage * getImage(const string & name) {
 		...
 	}
 	```  
-	
+
     ```c++
 	// -------------------------------------------------------------  
 	// Function: release()  
@@ -56,11 +56,11 @@
 	// Return: void  
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  
-	void release(RawImage *image) {
+	void release(RawImage * image) {
 		...
 	}
 	```  
-	
+
     ```c++
 	// -------------------------------------------------------------  
 	// Function: load()  
@@ -69,16 +69,16 @@
 	// 		const string &resourcesDescription;
 	// Attributes: nothing
 	// Return: void
-	// Observation: Without implementation.	
+	// Observation: Without implementation.
 	// -------------------------------------------------------------  
-	void load(const string &resourcesDescription) {
+	void load(const string & resourcesDescription) {
 		...
 	}
 	```  
 
 ### ATTRIBUTES:
     ```c++
-	static ResourcesManager* instance = NULL;		// Pointer to instance resources.
+	static ResourcesManager * instance = NULL;		// Pointer to instance resources.
 	class ResourcesInfo;							// Contain information of resources.
 	vector<ResourcesInfo*> resources;				// Vector that contains information of resources.
 	```  
