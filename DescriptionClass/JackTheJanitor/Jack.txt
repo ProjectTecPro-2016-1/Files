@@ -8,7 +8,7 @@
 	// Description: 
 	// Parameters:
 	//		string filename;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	Jack(std::string filename) {
@@ -21,7 +21,7 @@
 	// Function: ~Jack()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	~Jack() {
@@ -35,7 +35,7 @@
 	// Description: 
 	// Parameters:
 	//		SDL_Surface * surface;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void drawSelf(SDL_Surface *surface)
@@ -49,7 +49,7 @@
 	// Function: isDead()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: bool  
 	// -------------------------------------------------------------  
 	bool isDead() {
@@ -62,7 +62,7 @@
 	// Function: die()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void die() {
@@ -75,7 +75,7 @@
 	// Function: setSpriteClips()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void setSpriteClips() {
@@ -92,7 +92,7 @@
 	//		int xRange;		Description
 	//		int yBegin;		Description
 	//		int yRange;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void move(int xBegin, int xRange, int yBegin, int yRange) {
@@ -106,7 +106,7 @@
 	// Description: 
 	// Parameters:
 	//		int v;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void pushMove(int v) {
@@ -120,7 +120,7 @@
 	// Description: 
 	// Parameters:
 	//		int v;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void popMove(int v) {
@@ -134,7 +134,7 @@
 	// Description: 
 	// Parameters:
 	//		Level * level;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void jump(Level * level) {
@@ -147,7 +147,7 @@
 	// Function: getXPosition()  
 	// Description: 
 	// Parameters:
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: int  
 	// -------------------------------------------------------------  
 	int getXPosition() {
@@ -160,7 +160,7 @@
 	// Function: getYPosition()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: int  
 	// -------------------------------------------------------------  
 	int getYPosition() {
@@ -173,7 +173,7 @@
 	// Function: pushBox()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void pushBox() {

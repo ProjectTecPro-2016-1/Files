@@ -10,7 +10,7 @@
 	//		string filename;		Description
 	//		int xPosition;			Description
 	//		int yPosition;			Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	Label(std::string filename, int xPosition, int yPosition) {
@@ -23,7 +23,7 @@
 	// Function: ~Label()  
 	// Description: 
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	~Label() {
@@ -37,7 +37,7 @@
 	// Description: 
 	// Parameters:
 	//		SDL_Surface * surface;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void drawSelf(SDL_Surface * surface) {
@@ -52,7 +52,7 @@
 	// Parameters:
 	//		int xMouse;		Description
 	//		int yMouse;		Description
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: bool
 	// -------------------------------------------------------------  
 	bool wasClicked(int xMouse, int yMouse) {

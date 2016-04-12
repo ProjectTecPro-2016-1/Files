@@ -1,509 +1,534 @@
 ## CLASS: Game
-	Description: Classe que efetua todas as operações necessárias de controle do jogo. 
-	Observation: Classe chamada após a Main.
-	
+	Description: It's the most important class of the project. It's does all operation need to game start and run, and has control of the operations in the game.
+	Observation: Main.cpp call this class.
+
 ### METHODS:
 	```c++
-	// -------------------------------------------------------------  
-	// Function: init()
-	// Description: Função que inicializa os atributos do jogo e chama função para iniciar o 
-	//				gerencialmento das propriedades gráficas
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void init() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: loop()
-	// Description: Gerar o ciclo 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void loop() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: shutdown()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void shutdown() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: wonGameScreen()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void wonGameScreen() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: showOptionsScreen()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void showOptionsScreen() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: gameOvering()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void gameOvering() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: gameOverScreenDraw()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void gameOverScreenDraw() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: gameOverScreenLoop()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void gameOverScreenLoop() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: pausingLevel()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void pausingLevel() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: pauseScreenDraw()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void pauseScreenDraw() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: pauseScreenLoop()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void pauseScreenLoop() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: initializingScreen()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void initializingScreen() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: initScreenDraw()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void initScreenDraw() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
-	// Function: initScreenLoop()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
-	void initScreenLoop() {
-		...
-	}
-	```  
-
-	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: initGUI()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Description: Necessária para centralizar a inicialização das
+					diretivas da interface gráfica controlada pela SDL.
+	// Return: void
+	// -------------------------------------------------------------
 	void initGUI() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: closeGUI()
-	// Description: 
-	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Description: Centraliza a finalização de plugins das bibliotecas
+	//				do SDL de audio e interface gráfica.
+	// Return: void
+	// -------------------------------------------------------------
 	void closeGUI() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: loadCommonResources()
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: init()
+	// Description: Função que inicializa os atributos do jogo e chama função para iniciar o
+	//				gerencialmento das propriedades gráficas
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void init() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: loop()
+	// Description: Gerar o ciclo de funcionamento do jogo. É necessária para manter o controle da execução
+	//				dentro de uma função.
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void loop() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: shutdown()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void shutdown() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: wonGameScreen()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void wonGameScreen() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: showOptionsScreen()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void showOptionsScreen() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: gameOvering()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void gameOvering() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: gameOverScreenDraw()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void gameOverScreenDraw() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: gameOverScreenLoop()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void gameOverScreenLoop() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: pausingLevel()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void pausingLevel() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: pauseScreenDraw()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void pauseScreenDraw() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: pauseScreenLoop()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void pauseScreenLoop() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: initializingScreen()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void initializingScreen() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: initScreenDraw()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void initScreenDraw() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: initScreenLoop()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void initScreenLoop() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: initGUI()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void initGUI() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: closeGUI()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void closeGUI() {
+		...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: loadCommonResources()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void loadCommonResources() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: releaseCommonResources()
-	// Description: 
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void releaseCommonResources() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: loadProfile()
-	// Description: 
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void loadProfile() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: saveProfile()
-	// Description: 
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void saveProfile() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: updateTimeStep()
-	// Description: 
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void updateTimeStep() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: handleEventMouseButtonUp()
-	// Description: 
+	// Description:
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void handleEventMouseButtonUp(SDL_Event & event) {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: handleEventMouseButtonDown()
-	// Description: 
+	// Description:
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void handleEventMouseButtonDown(SDL_Event & event) {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: handleEventKeyDown()
-	// Description: 
+	// Description:
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void handleEventKeyDown(SDL_Event & event) {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: handleEventKeyUp()
-	// Description: 
+	// Description:
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void handleEventKeyUp(SDL_Event & event) {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: handleEventType()
-	// Description: 
+	// Description:
 	// Parameters:
 	//		SDL_Event & event;		Description
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void handleEventType(SDL_Event & event) {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
+	// -------------------------------------------------------------
 	// Function: handleEvents()
-	// Description: 
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void handleEvents() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: runAI()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: runAI()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void runAI() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: runPhysics()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: runPhysics()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void runPhysics() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: update()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: update()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void update() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: recieveNetworkData()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: recieveNetworkData()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void recieveNetworkData() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: sendNetworkData()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: sendNetworkData()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void sendNetworkData() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: draw()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: draw()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void draw() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: loadLevel()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: loadLevel()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void loadLevel() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: releaseLevel()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: releaseLevel()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: void  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
 	void releaseLevel() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: checkIfSkip()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: checkIfSkip()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: int  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: int
+	// -------------------------------------------------------------
 	int checkIfSkip() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: isGameFinished()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: isGameFinished()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: bool  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: bool
+	// -------------------------------------------------------------
 	bool isGameFinished() {
 		...
 	}
-	```  
+	```
 
 	```c++
-	// -------------------------------------------------------------  
-	// Function: isLevelFinished()  
-	// Description: 
+	// -------------------------------------------------------------
+	// Function: isLevelFinished()
+	// Description:
 	// Parameters: void
-	// Atributes: nothing
-	// Return: bool  
-	// -------------------------------------------------------------  
+	// Attributes: nothing
+	// Return: bool
+	// -------------------------------------------------------------
 	bool isLevelFinished() {
 		...
 	}
-	```  
+	```
 
-	
+
 ### ATRIBUTTES:
 	```c++
 	SDL_Surface * screen;					// Description
@@ -532,12 +557,12 @@
 	int linesDeleted;						// Description
 	int maxLevelLines;						// Description
 	int actualLevel;						// Description
-	```  
-	
+	```
+
 ### CONST:
 	```c++
 	static const int SCREEN_WIDTH = 854;		// Description
 	static const int SCREEN_HEIGHT = 480;		// Description
 	static const int SCREEN_BPP = 32;			// Description
 	static const int SCREEN_FPS = 60;			// Description
-	```  
+	```

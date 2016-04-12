@@ -7,7 +7,7 @@
 	// Function: Timer()  
 	// Description: Class Time constructor where that happens attributes  inicialization.
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	Timer() {
@@ -20,7 +20,7 @@
 	// Function: start()  
 	// Description: Change the status of attributes on game  in order to start a new game.  
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	void start() {
@@ -33,7 +33,7 @@
 	// Function: stop()  
 	// Description: Change the status of attributes on game in order to paralyze.
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
    	void stop() {
@@ -46,7 +46,7 @@
 	// Function: pause()  
 	// Description: Change the status of attributes on game in order to stop.
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
     void pause() {
@@ -59,7 +59,7 @@
 	// Function: unpause()  
 	// Description: Change the status of attributes on game in order to take the "pause".
 	// Parameters:  void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
     void unpause() {
@@ -86,7 +86,7 @@
 	// Function: get_ticks()  
 	// Description: Returns the instant of actual game.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: int  
 	// ------------------------------------------------------------- 
 	int get_ticks() {
@@ -99,7 +99,7 @@
 	// Function: is_started()  
 	// Description: Returns the information if the game has been initialized or not.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: bool  
 	// ------------------------------------------------------------- 
 	bool is_started() {
@@ -112,7 +112,7 @@
 	// Function: is_paused()  
 	// Description: Returns the information is the game is paused or not.
 	// Parameters: void
-	// Atributes: nothing
+	// Attributes: nothing
 	// Return: bool  
 	// ------------------------------------------------------------- 
     bool is_paused() {
