@@ -149,7 +149,7 @@
 	// -------------------------------------------------------------
 	// Function: jump()
 	// Description:	Controls the act of jumping and its consequences with respect to the maximum
-					height and possible collisions with some box.
+	//				height and possible collisions with some box.
 	// Parameters:
 	//		Level * level;		Pointer to access level class.
 	// Attributes: nothing
