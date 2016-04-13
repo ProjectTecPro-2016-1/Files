@@ -41,7 +41,7 @@
 	//		int limit2;		Limit to opposite Jack's direction in limit1;
 	// Return: void
 	// -------------------------------------------------------------
-	setLimit() {
+	int setLimit() {
 		...
 	}
 	```
@@ -56,8 +56,7 @@
 	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------
-	void drawSelf(SDL_Surface *surface)
-	 {
+	void drawSelf(SDL_Surface *surface) {
 		...
 	}
 	```
