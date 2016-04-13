@@ -121,9 +121,9 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: pushMove()
-	// Description: Method to handle the event of Jack's movement in the horizontal.
+	// Description: Method that makes Jack move again after pausing.
 	// Parameters:
-	//		int v;		Variable related to the direction and how much Jack will walk in the horizontal.
+	//		int v;		Variable that will make Jack walk again.
 	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------
@@ -135,9 +135,9 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: popMove()
-	// Description:	Method to handle the event of Jack's movement in the horizontal while jumping.
+	// Description:	Method that stops Jack when pausing.
 	// Parameters:
-	//		int v;		Variable related to the direction and how much Jack will walk in the horizontal.
+	//		int v;		Variable that will stop Jack's movement.
 	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------
@@ -152,7 +152,7 @@
 	// Description:	Controls the act of jumping and its consequences with respect to the maximum
 					height and possible collisions with some box.
 	// Parameters:
-	//		Level * level;		Description
+	//		Level * level;		Pointer to access level class.
 	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------
@@ -202,18 +202,22 @@
 
 ### ATRIBUTTES:
 	```c++
-	SDL_Surface *jack;			// Description
-	int x_position;				// Description
-	int y_position;				// Description
-	bool dead;					// Description
-	int lastMove;				// Description
-	int lastButOneMove;			// Description
-	int frame; //for animation	// Description
+	SDL_Surface *jack;			// Pointer for Jack's graphic elements.
+	int x_position;				// Variable that store Jack's position in X axis.
+	int y_position;				// Variable that store Jack's position in Y axis.
+	bool dead;					// Stores the information whether Jack is dead or not.
+	int lastMove;				// Stores Jack's last move. Used to stop Jack or make him walk again.
+	int lastButOneMove;			// Stores Jack's last but one move. Used to stop Jack or make him walk again.
+	int frame; 					// Variable for animation in drawSelf() method.
+	int	strength;				// Stores Jack's strength to move boxes.
+	int speed;					// Stores Jack's actual horizontal speed.
+	int verticalSpeed;			// Stores Jack's actual vertical Speed.
+	bool jumping;				// Stores the information wheter Jack is jumping or not.
 	```
 
 ### CONST:
 	```c++
-	static const int ACCELERATION = 1;		// Description
-	static const int JACK_WIDTH = 38;		// Description
-	static const int JACK_HEIGHT = 57;		// Description
+	static const int ACCELERATION = 1;		// Used to increment the speed in the Y axis;
+	static const int JACK_WIDTH = 38;		// Jack's horizontal size.
+	static const int JACK_HEIGHT = 57;		// Jack's vertical size.
 	```
