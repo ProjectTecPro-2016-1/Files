@@ -217,9 +217,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: loadCommonResources()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
+	// Description: Faz a inicialização dos recursos comuns de funcionamento do jogo, como som e áudio.
 	// Return: void
 	// -------------------------------------------------------------
 	void loadCommonResources() {
@@ -230,10 +228,10 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: releaseCommonResources()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
+	// Description: Faz a limpeza e liberação dos recursos comuns de funcionamento do jogo.
 	// Return: void
+	// Observations:
+	// 		Funtion not implemented
 	// -------------------------------------------------------------
 	void releaseCommonResources() {
 		...
@@ -243,10 +241,10 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: loadProfile()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
+	// Description: Carrega um profile que armazena dados de um usuário específico.
 	// Return: void
+	// Observations:
+	// 		Funtion not implemented
 	// -------------------------------------------------------------
 	void loadProfile() {
 		...
@@ -256,10 +254,10 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: saveProfile()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
+	// Description: Salva um profile do usuário para carregar em outro momento.
 	// Return: void
+	// Observations:
+	// 		Funtion not implemented
 	// -------------------------------------------------------------
 	void saveProfile() {
 		...
@@ -269,12 +267,86 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: updateTimeStep()
+	// Description: Inicia um novo tempo de jogo, executado assim que algum nível termina.
+	// Return: void
+	// -------------------------------------------------------------
+	void updateTimeStep() {
+		...
+	}
+	```  
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: update()
+	// Description: Executa durante o loop de duração do jogo e atualiza os atributos de controle do mesmo.
+	// Return: void
+	// -------------------------------------------------------------
+	void update() {
+		...
+	}
+	```  
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: draw()
 	// Description:
 	// Parameters: void
 	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------
-	void updateTimeStep() {
+	void draw() {
+		...
+	}
+	```  
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: runAI()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void runAI() {
+		...
+	}
+	```  
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: runPhysics()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void runPhysics() {
+		...
+	}
+	```  
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: recieveNetworkData()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void recieveNetworkData() {
+		...
+	}
+	```  
+
+	```c++
+	// -------------------------------------------------------------
+	// Function: sendNetworkData()
+	// Description:
+	// Parameters: void
+	// Attributes: nothing
+	// Return: void
+	// -------------------------------------------------------------
+	void sendNetworkData() {
 		...
 	}
 	```  
@@ -360,85 +432,46 @@
 	void handleEvents() {
 		...
 	}
-	```
-
+	```  
+	
 	```c++
 	// -------------------------------------------------------------
-	// Function: runAI()
+	// Function: checkIfSkip()
 	// Description:
 	// Parameters: void
 	// Attributes: nothing
-	// Return: void
+	// Return: int
 	// -------------------------------------------------------------
-	void runAI() {
+	int checkIfSkip() {
 		...
 	}
-	```
+	```  
 
 	```c++
 	// -------------------------------------------------------------
-	// Function: runPhysics()
+	// Function: isGameFinished()
 	// Description:
 	// Parameters: void
 	// Attributes: nothing
-	// Return: void
+	// Return: bool
 	// -------------------------------------------------------------
-	void runPhysics() {
+	bool isGameFinished() {
 		...
 	}
-	```
+	```  
 
 	```c++
 	// -------------------------------------------------------------
-	// Function: update()
+	// Function: isLevelFinished()
 	// Description:
 	// Parameters: void
 	// Attributes: nothing
-	// Return: void
+	// Return: bool
 	// -------------------------------------------------------------
-	void update() {
+	bool isLevelFinished() {
 		...
 	}
-	```
-
-	```c++
-	// -------------------------------------------------------------
-	// Function: recieveNetworkData()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
-	// Return: void
-	// -------------------------------------------------------------
-	void recieveNetworkData() {
-		...
-	}
-	```
-
-	```c++
-	// -------------------------------------------------------------
-	// Function: sendNetworkData()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
-	// Return: void
-	// -------------------------------------------------------------
-	void sendNetworkData() {
-		...
-	}
-	```
-
-	```c++
-	// -------------------------------------------------------------
-	// Function: draw()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
-	// Return: void
-	// -------------------------------------------------------------
-	void draw() {
-		...
-	}
-	```
+	```  
 
 	```c++
 	// -------------------------------------------------------------
@@ -462,45 +495,6 @@
 	// Return: void
 	// -------------------------------------------------------------
 	void releaseLevel() {
-		...
-	}
-	```
-
-	```c++
-	// -------------------------------------------------------------
-	// Function: checkIfSkip()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
-	// Return: int
-	// -------------------------------------------------------------
-	int checkIfSkip() {
-		...
-	}
-	```
-
-	```c++
-	// -------------------------------------------------------------
-	// Function: isGameFinished()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
-	// Return: bool
-	// -------------------------------------------------------------
-	bool isGameFinished() {
-		...
-	}
-	```
-
-	```c++
-	// -------------------------------------------------------------
-	// Function: isLevelFinished()
-	// Description:
-	// Parameters: void
-	// Attributes: nothing
-	// Return: bool
-	// -------------------------------------------------------------
-	bool isLevelFinished() {
 		...
 	}
 	```
