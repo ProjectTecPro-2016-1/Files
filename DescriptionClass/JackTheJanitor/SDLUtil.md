@@ -1,31 +1,31 @@
 ## CLASS: SDLUtil
 	Description: Classe que desenha as imagens dos elementos em posições determinadas da tela.
-	
+
 ### METHODS:
     ```c++
-	// -------------------------------------------------------------  
-	// Function: loadImage()  
-	// Description: Carrega imagem de algum elemento para desenhar na tela.
+	// -------------------------------------------------------------
+	// Function: loadImage()
+	// Description: Loads image of some element to be drawn in the screen.
 	// Parameters:
-	//		string filename;			Nome do arquivo da imagem que será desenhada no elemento.
+	//		string filename;			Name of the file that will be drawn.
 	// Attributes: nothing
 	// Return: void
-	// ------------------------------------------------------------- 
+	// -------------------------------------------------------------
 	static SDL_Surface *loadImage(std::string filename) {
 		...
 	}
 	```  
-	
+
 	```c++
-	// -------------------------------------------------------------  
-	// Function: applySurface()  
-	// Description: Aplica de a interface de acordo com os componentes gráficos.
+	// -------------------------------------------------------------
+	// Function: applySurface()
+	// Description: Applies the surface according to graphic components.
 	// Parameters:
-	//		int x;								Posição no eixo X onde o elemento será desenhado.
-	//		int y;								Posição no eixo Y onde o elemento será desenhado.
-	//		SDL_Surface *source;				Ponteiro para o elemento que conterá o desenho.
-	//		SDL_Surface *destination;			Ponteiro para o local onde o elemento estará disposto.
-	//		SDL_Rect* clip;						Não se sabe.
+	//		int x;								X axis position where the element will be drawn.
+	//		int y;								Y axis position where the element will be drawn.
+	//		SDL_Surface *source;				Pointer to the element that will contain the draw.
+	//		SDL_Surface *destination;			Pointer to the location where the element is arranged.
+	//		SDL_Rect* clip;						Null pointer passed as parameter to a graphical function.
 	// Attributes: nothing
 	// Return: void
 	// ------------------------------------------------------------- 
@@ -33,7 +33,7 @@
 		...
 	}
 	```  
-	
+
 ### ATTRIBUTES:
 
 ### CONST:
