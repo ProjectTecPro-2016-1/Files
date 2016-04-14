@@ -1,5 +1,5 @@
 ## CLASS: SDLUtil
-	Description: Classe que desenha as imagens dos elementos em posições determinadas da tela.
+	Description: Class that draws the images of the elements in certain positions of the screen.
 
 ### METHODS:
     ```c++
@@ -28,7 +28,7 @@
 	//		SDL_Rect* clip;						Null pointer passed as parameter to a graphical function.
 	// Attributes: nothing
 	// Return: void
-	// ------------------------------------------------------------- 
+	// -------------------------------------------------------------
 	static void applySurface(int x, int y, SDL_Surface *source, SDL_Surface *destination, SDL_Rect* clip = NULL) {
 		...
 	}
