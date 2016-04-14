@@ -1,131 +1,115 @@
 ## CLASS: Timer
-	Description: Classe que controla o funcionamento do tempo no jogo.  
+	Description: Class that controls the operation of the time in the game.  
 
 ### METHODS:
 	```c++
 	// -------------------------------------------------------------  
 	// Function: Timer()  
-	// Description: Construtor da classe Timer onde acontecem as inicializações dos atributos da classe.  
-	// Parameters:  void
-	// Attributes: nothing
+	// Description: Builder of the Timer class which hosts the updates of class attributes.  
 	// Return: void  
 	// -------------------------------------------------------------  
 	Timer() {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: start()  
-	// Description: Altera os atributos de status dos jogos afim de iniciar um novo jogo.  
-	// Parameters:  void
-	// Attributes: nothing
+	// Description: Changes the game status attributes in order to start a new game.  
 	// Return: void  
 	// -------------------------------------------------------------  
 	void start() {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: stop()  
-	// Description: Altera os atributos de status do jogo afim de paralizar.  
-	// Parameters:  void
-	// Attributes: nothing
+	// Description: Changes the game status attributes in order to paralyze.  
 	// Return: void  
 	// -------------------------------------------------------------  
    	void stop() {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: pause()  
-	// Description: Altera os atributos de status do jogo afim de pausar.  
-	// Parameters:  void
-	// Attributes: nothing
+	// Description: Changes the game status attributes in order to pause.  
 	// Return: void  
 	// -------------------------------------------------------------  
     void pause() {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: unpause()  
-	// Description: Altera os atributos de status do jogo afim de tirar a pausa.  
+	// Description: Changes the game status attributes in order to take a break.  
 	// Parameters:  void
-	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
     void unpause() {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: waitDiff()  
-	// Description: Função que gera um delay na transição em um frame e outro carregamento.
+	// Description: Function that generates a delay in the transition to a frame and another shipment.
 	// Parameters:
-	//		float ratioFPS;  		Tempo que durará o delay.
-	// Attributes: nothing
+	//		float ratioFPS;  		Time will the delay.
 	// Return: void  
-	// ------------------------------------------------------------- 
+	// -------------------------------------------------------------
     void waitDiff(float ratioFPS) {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: get_ticks()  
-	// Description: Retorna o instante do jogo atual.
-	// Parameters: void
-	// Attributes: nothing
+	// Description: Returns the time of the current game.
 	// Return: int  
-	// ------------------------------------------------------------- 
+	// -------------------------------------------------------------
 	int get_ticks() {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: is_started()  
-	// Description: Retorna a informação de se o jogo está iniciado ou não.
-	// Parameters: void
-	// Attributes: nothing
+	// Description: Returns information on whether the game is started or not.
 	// Return: bool  
-	// ------------------------------------------------------------- 
+	// -------------------------------------------------------------
 	bool is_started() {
 		...
 	}
 	```  
-	
+
 	```c++
 	// -------------------------------------------------------------  
 	// Function: is_paused()  
-	// Description: Retorna a informação de se o jogo está pausado ou não.
-	// Parameters: void
-	// Attributes: nothing
+	// Description: Returns information on whether the game is paused or not.
 	// Return: bool  
-	// ------------------------------------------------------------- 
+	// -------------------------------------------------------------
     bool is_paused() {
 		...
 	}
 	```  
-	
+
 ### ATTRIBUTES:
 	```c++
-	int startTicks;			// Guarda o tempo que o jogo durou ou está durando.
-	int pausedTicks;		// Guarda o tempo que o jogo durou a pausa do jogo.
-	bool paused;			// Contém informação de se o jogo está pausado ou não.
-	bool started;			// Contém informação de se o jogo está iniciado ou não.
+	int startTicks;			// Saves the time the game lasted or is lasting.
+	int pausedTicks;		// Saves the time the game lasted the rest of the game.
+	bool paused;			// It contains information on whether the game is paused or not.
+	bool started;			// It contains information on whether the game is started or not.
 	```  
 
 ### CONST:
