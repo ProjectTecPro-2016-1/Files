@@ -1,27 +1,27 @@
-## CLASS: GameOverScreen
-	Description: Controls all actions that the screen runs at the end of the game.
+## CLASS: InitScreen
+	Description: Controls all actions that the screen runs at the beginning of the game.
 
 ### METHODS:
 	```c++
 	// -------------------------------------------------------------  
-	// Function: GameOverScreen()  
-	// Description: Load the image of level on screen.
+	// Function: InitScreen()  
+	// Description: Load the image of Start Game, the initial screen.
 	// Parameters:
-	//		string filename;		Name of a image file of level that will be showed on screen.
+	//		string filename;		Name of "initial" image file that will be showed on screen.
 	// Return: void  
 	// -------------------------------------------------------------  
-	GameOverScreen(std::string filename) {
+	InitScreen(std::string filename) {
 		...
 	}
 	```  
 	
 	```c++
 	// -------------------------------------------------------------  
-	// Function: ~GameOverScreen()  
-	// Description: Destructor of class that clean the screen.
+	// Function: ~InitScreen()  
+	// Description: Destructor of class that clean the initial screen.
 	// Return: void  
 	// -------------------------------------------------------------  
-    ~GameOverScreen() {
+	~InitScreen() {
 		...
 	}
 	```  
@@ -29,10 +29,9 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: drawSelf()  
-	// Description: Draws the image on screen, according to the level.
+	// Description: Applies the image of Start Game on screen.
 	// Parameters:
-	//		SDL_Surface * surface;		Is the surface that the image will load.
-	// Attributes: nothing
+	//		SDL_Surface *surface;		Is the surface that the image will load.
 	// Return: void  
 	// -------------------------------------------------------------  
 	void drawSelf(SDL_Surface *surface) {
@@ -42,7 +41,7 @@
 
 ### ATRIBUTTES:
 	```c++
-	SDL_Surface *gameOverScreen;		// Keeps the image that loaded.
+	SDL_Surface *initScreen;		// Keeps the image that loaded.
 	```  
 	
 ### CONST:

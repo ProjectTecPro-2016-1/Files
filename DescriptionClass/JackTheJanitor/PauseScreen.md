@@ -1,27 +1,27 @@
-## CLASS: GameOverScreen
-	Description: Controls all actions that the screen runs at the end of the game.
-
+## CLASS: PauseScreen
+	Description: Controls whats is displayed on the screen for the player when the game is paused.
+	
 ### METHODS:
 	```c++
 	// -------------------------------------------------------------  
-	// Function: GameOverScreen()  
-	// Description: Load the image of level on screen.
+	// Function: PauseScreen()  
+	// Description: Load the image of Pause on game.
 	// Parameters:
-	//		string filename;		Name of a image file of level that will be showed on screen.
+	//		string filename;		Name of "pause" image file that will be showed on screen.
 	// Return: void  
 	// -------------------------------------------------------------  
-	GameOverScreen(std::string filename) {
+	PauseScreen(std::string filename) {
 		...
 	}
 	```  
 	
 	```c++
 	// -------------------------------------------------------------  
-	// Function: ~GameOverScreen()  
-	// Description: Destructor of class that clean the screen.
+	// Function: ~PauseScreen()  
+	// Description: Destructor of class that clean the pause screen.
 	// Return: void  
 	// -------------------------------------------------------------  
-    ~GameOverScreen() {
+    ~PauseScreen() {
 		...
 	}
 	```  
@@ -29,10 +29,9 @@
 	```c++
 	// -------------------------------------------------------------  
 	// Function: drawSelf()  
-	// Description: Draws the image on screen, according to the level.
+	// Description: Applies the image of Pause Game on screen.
 	// Parameters:
-	//		SDL_Surface * surface;		Is the surface that the image will load.
-	// Attributes: nothing
+	//		SDL_Surface *surface;		Is the surface that the image will load.
 	// Return: void  
 	// -------------------------------------------------------------  
 	void drawSelf(SDL_Surface *surface) {
@@ -40,13 +39,15 @@
 	}
 	```  
 
-### ATRIBUTTES:
+### ATTRIBUTES:
 	```c++
-	SDL_Surface *gameOverScreen;		// Keeps the image that loaded.
+	SDL_Surface *pauseScreen;
+	static const int LEVEL_WIDTH = 854;			// Size of width screen that will show the image level, in pixels.
+    static const int LEVEL_HEIGHT = 480;		// Size of height screen that will show the image level, in pixels.
 	```  
 	
 ### CONST:
 	```c++
 	static const int LEVEL_WIDTH = 854;			// Size of width screen that will show the image level, in pixels.
     static const int LEVEL_HEIGHT = 480;		// Size of height screen that will show the image level, in pixels.
-	```  
+	```
