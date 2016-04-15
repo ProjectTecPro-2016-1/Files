@@ -133,7 +133,7 @@
 	bool lyingDown;			// Contain information if the box is falling or not.
 	int xPosition;			// Keep the actual position of the box on axis X.
 	int yPosition;			// Keep the actual position of the box on axis Y.
-	bool used;				// Contain information if the box is already in the game or not.
+	bool used;			// Contain information if the box is already in the game or not.
 	```  
 
 ### CONST:
