@@ -32,17 +32,16 @@
 	// Description: Draws the image on screen, according to the level.
 	// Parameters:
 	//		SDL_Surface * surface;		Is the surface that the image will load.
-	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
-	void drawSelf(SDL_Surface *surface) {
+	void drawSelf(SDL_Surface * surface) {
 		...
 	}
 	```  
 
 ### ATRIBUTTES:
 	```c++
-	SDL_Surface *gameOverScreen;		// Keeps the image that loaded.
+	SDL_Surface * gameOverScreen;		// Keeps the image that loaded.
 	```  
 	
 ### CONST:
