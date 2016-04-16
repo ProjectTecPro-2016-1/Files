@@ -1,5 +1,5 @@
 ## CLASS: Jack
-	Description:
+	Description: Class that describes Jack's actions during the game.
 
 ### METHODS:
 	```c++

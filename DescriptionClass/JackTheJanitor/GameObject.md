@@ -46,6 +46,8 @@
 	// Parameters:
 	//		SDL_Surface * surface;		Pointer for the surface where the graphic component will be drawn.
 	// Return: void
+	// Observation:
+	// 		Function Without implementation.
 	// -------------------------------------------------------------
 	virtual void drawSelf(SDL_Surface * surface) == 0;
 	```  
