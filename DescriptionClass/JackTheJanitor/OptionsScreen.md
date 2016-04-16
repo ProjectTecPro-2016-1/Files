@@ -31,11 +31,10 @@
 	// Function: drawSelf()  
 	// Description: Applies the image of "Help" and "Options" on screen.
 	// Parameters:
-	//		SDL_Surface *surface;		Is the surface that the image will load.
-	// Attributes: nothing
+	//		SDL_Surface * surface;		Is the surface that the image will load.
 	// Return: void  
 	// -------------------------------------------------------------  
-	void drawSelf(SDL_Surface *surface) {
+	void drawSelf(SDL_Surface * surface) {
 		...
 	}
 	```  
@@ -44,8 +43,12 @@
 	```c++
 	SDL_Surface * helpMessage;					// Surface for "Help" that will be applie on screen.
 	SDL_Surface * optionsScreen;				// Surface for "Options" that will be applie on screen.
-	static const int SCREEN_WIDTH = 854;		// Size of width screen that will show the "Help" and "Options" of game.
-	static const int SCREEN_HEIGHT = 480;		// Size of height screen that will show the "Help" and "Options" of game.
 	```  
 
 ### CONST:
+	```c++
+	static const int SCREEN_WIDTH = 854;		// Size of width screen that will show the "Help" and 
+												// "Options" of game.
+	static const int SCREEN_HEIGHT = 480;		// Size of height screen that will show the "Help" and
+												// "Options" of game.
+	```

@@ -8,10 +8,9 @@
 	// Description: Load image of some element to draw on screen.
 	// Parameters:
 	//		string filename;			Name of image file that will be drwan in element.
-	// Atributes: nothing
-	// Return: void
+	// Return: SDL_Surface * 
 	// -------------------------------------------------------------
-	static SDL_Surface *loadImage(std::string filename) {
+	static SDL_Surface * loadImage(std::string filename) {
 		...
 	}
 	```  
@@ -23,13 +22,13 @@
 	// Parameters:
 	//		int x;								X axis position where the element will be drawn.
 	//		int y;								Y axis position where the element will be drawn.
-	//		SDL_Surface *source;				Pointer to the element that will contain the draw.
-	//		SDL_Surface *destination;			Pointer to the location where the element is arranged.
-	//		SDL_Rect* clip;						Null pointer passed as parameter to a graphical function.
-	// Attributes: nothing
+	//		SDL_Surface * source;				Pointer to the element that will contain the draw.
+	//		SDL_Surface * destination;			Pointer to the location where the element is arranged.
+	//		SDL_Rect * clip;					Null pointer passed as parameter to a graphical function.
 	// Return: void
 	// -------------------------------------------------------------
-	static void applySurface(int x, int y, SDL_Surface *source, SDL_Surface *destination, SDL_Rect* clip = NULL) {
+	static void applySurface(int x, int y, SDL_Surface * source, SDL_Surface * destination, 
+							 SDL_Rect * clip = NULL) {
 		...
 	}
 	```  

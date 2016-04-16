@@ -8,7 +8,6 @@
 	// Description: Enemy class builder where the initializations of the variables happen.
 	// Parameters:  
 	//		string fileName;  		Enemy landscape file name.
-	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
 	Enemy(std::string filename) {
@@ -20,8 +19,6 @@
 	// -------------------------------------------------------------  
 	// Function: ~Enemy()
 	// Description: Enemy class destructor where the landscape image files free themselves.
-	// Parameters: void
-	// Attributes: nothing
 	// Return: void  
 	// -------------------------------------------------------------  
     ~Enemy() {
@@ -33,8 +30,6 @@
 	// -------------------------------------------------------------  
 	// Function: setSpriteClips()  
 	// Description: Initializes the dimensions of each picture frame and each enemy moviment.
-	// Parameters: void
-	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------  
 	void setSpriteClips() {
@@ -48,8 +43,7 @@
 	// Description: Selects the current motion frame and draws the enemies image in specific position
 	//				on the screen according to the enemy attributes.
 	// Parameters:
-	//		SDL_Surface *surface;  		Pointer for surface where the graphic component will be drawn .
-	// Attributes: nothing
+	//		SDL_Surface * surface;  		Pointer for surface where the graphic component will be drawn.
 	// Return: void  
 	// -------------------------------------------------------------
 	void drawSelf(SDL_Surface * surface) {
@@ -61,8 +55,6 @@
 	// -------------------------------------------------------------  
 	// Function: move()  
 	// Description: Moves the enemy horizontally according to level dimensions.
-	// Parameters: void
-	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------  
 	void move() {
@@ -76,7 +68,6 @@
 	// Description: Controls the enemies freedom box when the right position is achieved.
 	// Parameters:
 	//		int vector<Box*> boxes;			Vector that contains boxes it´s positions.
-	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------  
     void throwBox(vector<Box*> boxes) {
@@ -97,6 +88,6 @@
 
 ### CONST
 	```c++
-	static const int ENEMY_WIDTH = 38;			// Contains the enemies width from each position occupied on screen.
-	static const int ENEMY_HEIGHT = 57;			// Contains the enemies height from each position occupied on screen.
+	static const int ENEMY_WIDTH = 38;		// Contains the enemies width from each position occupied on screen.
+	static const int ENEMY_HEIGHT = 57;		// Contain the enemies height from each position occupied on screen.
 	```  

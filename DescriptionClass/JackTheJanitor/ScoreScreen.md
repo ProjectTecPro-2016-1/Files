@@ -29,10 +29,10 @@
 	// Function: drawSelf()  
 	// Description: Applies score message, score font and "armario" image on screen to display the player's score. 
 	// Parameters:
-	//		SDL_Surface *surface;		Is the surface that the image will load.
+	//		SDL_Surface * surface;		Is the surface that the image will load.
 	// Return: void  
 	// -------------------------------------------------------------  
-	void drawSelf(SDL_Surface *surface) {
+	void drawSelf(SDL_Surface * surface) {
 		...
 	}
 	```  
@@ -122,21 +122,24 @@
 	
 ### ATTRIBUTES:
 	```c++
-	SDL_Surface *armario;			//Is a surface that contains all informataion about player's score at the end of game.
-	TTF_Font *scoreFont;			//Is a font type loaded from a file, that can be used to shows the score. 
-	SDL_Surface *scoreMessage;		//Is a surface that contains a "score message" which will be shown on screen. 
-	SDL_Surface *boxMessage;		//Is the surface that contains a "box message" about the game at the time. 
-	SDL_Color scoreTextColor;		//The color of "Score" which will be shown on the sreen.
-	char scoreString[30];			//The value of score to be displayed on the screen.
-	char lineString[30];			//The amount of line lefts to be displayed on the screen.
-	int scorePoints;				//Real value of player's score. 
-	int lineLeft;					//Real value of line lefts on game. 
+	SDL_Surface * armario;			// Is a surface that contains all informataion about player's 
+									// score at the end of game.
+	TTF_Font * scoreFont;			// Is a font type loaded from a file, that can be used to shows the score. 
+	SDL_Surface * scoreMessage;		// Is a surface that contains a "score message" which will be 
+									// shown on screen. 
+	SDL_Surface * boxMessage;		// Is the surface that contains a "box message" about the 
+									// game at the time. 
+	SDL_Color scoreTextColor;		// The color of "Score" which will be shown on the sreen.
+	char scoreString[30];			// The value of score to be displayed on the screen.
+	char lineString[30];			// The amount of line lefts to be displayed on the screen.
+	int scorePoints;				// Real value of player's score. 
+	int lineLeft;					// Real value of line lefts on game. 
 	```  
 
 ### CONST:
 	```c++
-	static const int SCORE_WIDTH = 282;			//Size of width screen that will show the score, in pixels.
-	static const int SCORE_HEIGHT = 456;		//Size of height screen that will show the score, in pixels.
-	static const int SCORE_X_OFFSET = 506;		//Setpoint on the x axis where the score will be shown.
-	static const int SCORE_Y_OFFSET = 10;		//Setpoint on the y axis where the score will be shown.
+	static const int SCORE_WIDTH = 282;			// Size of width screen that will show the score, in pixels.
+	static const int SCORE_HEIGHT = 456;		// Size of height screen that will show the score, in pixels.
+	static const int SCORE_X_OFFSET = 506;		// Setpoint on the x axis where the score will be shown.
+	static const int SCORE_Y_OFFSET = 10;		// Setpoint on the y axis where the score will be shown.
 	```  

@@ -7,10 +7,9 @@
 	// -------------------------------------------------------------  
 	// Function: ResourcesManager()  
 	// Description: ResourcesManager class builder.
-	// Parameters: void
-	// Attributes: nothing
 	// Return: void  
-	// Observation: Without implementation.
+	// Observation: 
+	//		Without implementation.
 	// -------------------------------------------------------------  
 	ResourcesManager() {
 		...
@@ -21,10 +20,9 @@
 	// -------------------------------------------------------------  
 	// Function: getInstance()  
 	// Description: Keep instance of a pointer resource.
-	// Parameters: void
-	// Attributes: nothing
 	// Return: static ResourcesManager *
-	// Observation: Without implementation.
+	// Observation: 
+	//		Without implementation.
 	// -------------------------------------------------------------  
 	static ResourcesManager * getInstance() {
 		...
@@ -36,10 +34,10 @@
 	// Function: getImage()  
 	// Description:
 	// Parameters:
-	// 		const string &name;
-	// Attributes: nothing
+	// 		const string & name;
 	// Return: RawImage *
-	// Observation: Without implementation.
+	// Observation: 
+	//		Without implementation.
 	// -------------------------------------------------------------  
 	RawImage * getImage(const string & name) {
 		...
@@ -51,10 +49,10 @@
 	// Function: release()  
 	// Description:
 	// Parameters:
-	// 		RawImage *image;
-	// Attributes: nothing
+	// 		RawImage * image;
 	// Return: void  
-	// Observation: Without implementation.
+	// Observation: 
+	//		Without implementation.
 	// -------------------------------------------------------------  
 	void release(RawImage * image) {
 		...
@@ -66,10 +64,10 @@
 	// Function: load()  
 	// Description:
 	// Parameters:
-	// 		const string &resourcesDescription;
-	// Attributes: nothing
+	// 		const string & resourcesDescription;
 	// Return: void
-	// Observation: Without implementation.
+	// Observation: 
+	//		Without implementation.
 	// -------------------------------------------------------------  
 	void load(const string & resourcesDescription) {
 		...

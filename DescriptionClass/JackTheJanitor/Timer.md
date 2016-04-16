@@ -50,7 +50,6 @@
 	// -------------------------------------------------------------  
 	// Function: unpause()  
 	// Description: Changes the game status attributes in order to take a break.  
-	// Parameters:  void
 	// Return: void  
 	// -------------------------------------------------------------  
     void unpause() {

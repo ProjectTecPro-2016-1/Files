@@ -7,9 +7,7 @@
 	// Function: load()  
 	// Description:
 	// Parameters:
-	//		const string &name;			// Name of something that will be load.
-	// Attributes: nothing
-	// Return: void
+	//		const string & name;			// Name of something that will be load.
 	// Observation: Without implementation.
 	// -------------------------------------------------------------  
 	virtual void load(const string & name) = 0 {

@@ -29,10 +29,10 @@
 	// Function: load()  
 	// Description: Load the images on surface if its not empty.
 	// Parameters:
-	// 		const string &name;			File name.
+	// 		const string & name;			File name.
 	// Return: void  
 	// -------------------------------------------------------------  
-	void load(const string& name) {
+	void load(const string & name) {
 		...
 	}
 	```  
@@ -65,14 +65,14 @@
 	// Description: Return surface.
 	// Return: SDL_Surface *	
 	// -------------------------------------------------------------  
-	SDL_Surface *pixels() const {
+	SDL_Surface * pixels() const {
 		...
 	}
 	```	 
 
 ### ATTRIBUTES:
 	```c++
-	SDL_Surface *_pixels;		// Pointer for pixels graphic elements.
-	```
+	SDL_Surface * _pixels;		// Pointer for pixels graphic elements.
+	```  
 
 ### CONST:

@@ -8,8 +8,6 @@
 	// Function: init()
 	// Description: Função que inicializa os atributos do jogo e chama função para iniciar o
 	//				gerencialmento das propriedades gráficas
-	// Parameters: void
-	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------
 	void init() {
@@ -22,8 +20,6 @@
 	// Function: loop()
 	// Description: Gerar o ciclo de funcionamento do jogo. É necessária para manter o controle da execução
 	//				dentro de uma função.
-	// Parameters: void
-	// Attributes: nothing
 	// Return: void
 	// -------------------------------------------------------------
 	void loop() {
