@@ -1,15 +1,5 @@
 # _JACK THE JANITOR_ and _ENGINE_ - WIKI
 
-### INTRODUCTION:
-
-* This work has 2 different projects, Jack the Janitor and Engine development on "Introduction to Eletronic Games".
-* Jack The Janitor and Engine are devoloped in C++.
-
-Jack The Janitor is a puzzle game where the player controls Jack, a school's janitor who must organize the school's warehouse. Jack can push boxes to the left or right and jump boxes.
-	
-Jack The Janitor -> [link repository original GITHUB](https://github.com/fgagamedev/jtj)  
-Engine IJE -> [link repository original GITHUB](https://github.com/fgagamedev/IJE)
-
 <a name="summary1"></a>
 <a name="summary2"></a>
 <a name="summary3"></a>
