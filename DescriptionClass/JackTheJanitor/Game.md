@@ -6,8 +6,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: init()
-	// Description: Função que inicializa os atributos do jogo e chama função para iniciar o
-	//				gerencialmento das propriedades gráficas
+	// Description: Function that initialize atributtes on game and calls other function to initalize 	
+	//				graphic properties.
 	// Return: void
 	// -------------------------------------------------------------
 	void init() {
@@ -18,8 +18,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: loop()
-	// Description: Gerar o ciclo de funcionamento do jogo. É necessária para manter o controle da execução
-	//				dentro de uma função.
+	// Description: On game operation generate a cycle. To keeps control of execution inside a function 	//				on game.
 	// Return: void
 	// -------------------------------------------------------------
 	void loop() {
@@ -30,7 +29,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: shutdown()
-	// Description:	Terminar a execução do jogo limpando os componentes gráficos e de áudio.
+	// Description:	Clean graphic and audio components, ending the 
+	//				execution of the game.
 	// Return: void
 	// -------------------------------------------------------------
 	void shutdown() {
@@ -41,8 +41,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: initGUI()
-	// Description: Necessária para centralizar a inicialização das
-	//				diretivas da interface gráfica controlada pela SDL.
+	// Description: Needed to center the startup oh the graphical interface
+	//				of policy controlled by SDL.
 	// Return: void
 	// -------------------------------------------------------------
 	void initGUI() {
@@ -53,8 +53,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: closeGUI()
-	// Description: Centraliza a finalização de plugins das bibliotecas
-	//				do SDL de audio e interface gráfica.
+	// Description: Needed to center the completion of audio and image
+	//				plugins from SDL libraries. 
 	// Return: void
 	// -------------------------------------------------------------
 	void closeGUI() {
@@ -65,11 +65,13 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: wonGameScreen()
-	// Description: Monta a imagem e mostra a tela de game vencido. 
-					É executada apenas quando de fato o jogo termina com vitória.
+	// Description: Load and show on screen a image of won game.
+	//				Only runs when the game ends with victory.
 	// Attributes:
-	// 		bool playButton;		Contém informação se o botão de começar novo jogo foi ou não clicado.
-	//		bool quitButton;		Contém informação se o botão de sair foi clicado ou não.
+	// 		bool playButton;		Contains the information if the button to start a new
+	//								game was clicked or not.
+	//		bool quitButton;		Contains the information if the button to exit was 
+	//								clicked or not.
 	// Return: void
 	// -------------------------------------------------------------
 	void wonGameScreen() {
@@ -80,13 +82,14 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: showOptionsScreen()
-	// Description:	Monta e mostra a imagem e a tela de opções do jogo juntamente com os 
-	//				botões que fazem parte da mesma.
+	// Description:	Load and show a image and Screen Options of game along
+	//				with the buttons that are part of the same.
 	// Attributes:
-	// 		bool muteButton;		Informação se o botão de habilitar ou 
-	//								desabilitar audio do jogo foi clicado ou não.
-	//		bool loadButton;		Informação se o botão de carregar um jogo salvo foi clicado ou não.
-	//		bool backButton;		Informaçao se o botão de retornar a tela anterior foi clicado ou não.
+	// 		bool muteButton;		Information about button of audio enable or
+	//								disable it was clicked or not.
+	//		bool loadButton;		Information about button to load a game it was clicked or not.
+	//		bool backButton;		Information about button that returns to previous screen it was
+	//								clicked or not.
 	// Return: void
 	// -------------------------------------------------------------
 	void showOptionsScreen() {
@@ -97,7 +100,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: gameOvering()
-	// Description: Chamada quando o jogo é finalizado, quando o Jack morre.
+	// Description: When Jack dies or game is finished this function is called.
 	// Return: void
 	// -------------------------------------------------------------
 	void gameOvering() {
@@ -108,7 +111,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: gameOverScreenDraw()
-	// Description: Origem na função gameOvering e se destina a apresentar a tela de game over para o usuário.
+	// Description: From gameOvering function it is intended to present
+	//				the GameOver screen to the user.
 	// Return: void
 	// -------------------------------------------------------------
 	void gameOverScreenDraw() {
@@ -119,7 +123,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: gameOverScreenLoop()
-	// Description: Gera um loop na tela de game over para esperar uma ação do jogador.
+	// Description: On GameOver screen generates a loop to wait an action of the player. 
 	// Attributes:
 	// 		bool playButton;		Contém informação se o botão de começar um jogo foi clicado ou não.
     //		bool quitButton;		Contém informação se o botão de sair do jogo foi clicado ou não.
