@@ -1,204 +1,204 @@
 ## CLASS: Jack
-	Description: Class that describes Jack's actions during the game.
+Description: Class that describes Jack's actions during the game.
 
 ### METHODS:
-	```c++
-	// -------------------------------------------------------------
-	// Function: Jack()
-	// Description: Jack class builder where the initializations of the variables happen.
-	// Parameters:
-	//		string filename;	Name of the file from which will be loaded Jack's image.
-	// Return: void
-	// -------------------------------------------------------------
-	Jack(std::string filename) {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: Jack()
+// Description: Jack class builder where the initializations of the variables happen.
+// Parameters:
+//		string filename;	Name of the file from which will be loaded Jack's image.
+// Return: void
+// -------------------------------------------------------------
+Jack(std::string filename) {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: ~Jack()
-	// Description: Jack class destructor in which images files free themselves.
-	// Return: void
-	// -------------------------------------------------------------
-	~Jack() {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: ~Jack()
+// Description: Jack class destructor in which images files free themselves.
+// Return: void
+// -------------------------------------------------------------
+~Jack() {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: setLimit()
-	// Description:	Method that assures Jack won't pass specified limits.
-	// Parameters:
-	//		int value;		Value referent to Jack's actual position.
-	//		int limit1;		Limit to some of Jack's directions.
-	//		int range;		Range of the direction specified in limit1.
-	// Attributes:
-	//		int limit2;		Limit to opposite Jack's direction in limit1;
-	// Return: void
-	// -------------------------------------------------------------
-	int setLimit() {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: setLimit()
+// Description:	Method that assures Jack won't pass specified limits.
+// Parameters:
+//		int value;		Value referent to Jack's actual position.
+//		int limit1;		Limit to some of Jack's directions.
+//		int range;		Range of the direction specified in limit1.
+// Attributes:
+//		int limit2;		Limit to opposite Jack's direction in limit1;
+// Return: void
+// -------------------------------------------------------------
+int setLimit() {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: drawSelf()
-	// Description: Selects the current motion frame and draws Jack's image in specific position
-	//				on the screen according to it's attributes.
-	// Parameters:
-	//		SDL_Surface * surface;	Pointer for surface in which graphic components will be drawn
-	// Return: void
-	// -------------------------------------------------------------
-	void drawSelf(SDL_Surface * surface) {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: drawSelf()
+// Description: Selects the current motion frame and draws Jack's image in specific position
+//				on the screen according to it's attributes.
+// Parameters:
+//		SDL_Surface * surface;	Pointer for surface in which graphic components will be drawn
+// Return: void
+// -------------------------------------------------------------
+void drawSelf(SDL_Surface * surface) {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: isDead()
-	// Description:	Return the boolean variable indicating whether Jack is dead or not.
-	// Return: bool
-	// -------------------------------------------------------------
-	bool isDead() {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: isDead()
+// Description:	Return the boolean variable indicating whether Jack is dead or not.
+// Return: bool
+// -------------------------------------------------------------
+bool isDead() {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: die()
-	// Description:	Gives the true value to the boolean variable "dead".
-	// Return: void
-	// -------------------------------------------------------------
-	void die() {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: die()
+// Description:	Gives the true value to the boolean variable "dead".
+// Return: void
+// -------------------------------------------------------------
+void die() {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: setSpriteClips()
-	// Description: Initializes the dimensions of each picture frame and each Jack's moviment.
-	// Return: void
-	// -------------------------------------------------------------
-	void setSpriteClips() {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClips()
+// Description: Initializes the dimensions of each picture frame and each Jack's moviment.
+// Return: void
+// -------------------------------------------------------------
+void setSpriteClips() {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: move()
-	// Description: Method that calls setLimit() to assure Jack's won't pass screen's limits.
-	// Parameters:
-	//		int xBegin;		Limit in some of Jack's directions in X axis.
-	//		int xRange;		Range in X axis.
-	//		int yBegin;		Limit in some of Jack's directions in Y axis.
-	//		int yRange;		Range in Y axis.
-	// Return: void
-	// -------------------------------------------------------------
-	void move(int xBegin, int xRange, int yBegin, int yRange) {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: move()
+// Description: Method that calls setLimit() to assure Jack's won't pass screen's limits.
+// Parameters:
+//		int xBegin;		Limit in some of Jack's directions in X axis.
+//		int xRange;		Range in X axis.
+//		int yBegin;		Limit in some of Jack's directions in Y axis.
+//		int yRange;		Range in Y axis.
+// Return: void
+// -------------------------------------------------------------
+void move(int xBegin, int xRange, int yBegin, int yRange) {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: pushMove()
-	// Description: Method that makes Jack move again after pausing.
-	// Parameters:
-	//		int v;		Variable that will make Jack walk again.
-	// Return: void
-	// -------------------------------------------------------------
-	void pushMove(int v) {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: pushMove()
+// Description: Method that makes Jack move again after pausing.
+// Parameters:
+//		int v;		Variable that will make Jack walk again.
+// Return: void
+// -------------------------------------------------------------
+void pushMove(int v) {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: popMove()
-	// Description:	Method that stops Jack when pausing.
-	// Parameters:
-	//		int v;		Variable that will stop Jack's movement.
-	// Return: void
-	// -------------------------------------------------------------
-	void popMove(int v) {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: popMove()
+// Description:	Method that stops Jack when pausing.
+// Parameters:
+//		int v;		Variable that will stop Jack's movement.
+// Return: void
+// -------------------------------------------------------------
+void popMove(int v) {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: jump()
-	// Description:	Controls the act of jumping and its consequences with respect to the maximum
-	//				height and possible collisions with some box.
-	// Parameters:
-	//		Level * level;		Pointer to access level class.
-	// Return: void
-	// -------------------------------------------------------------
-	void jump(Level * level) {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: jump()
+// Description:	Controls the act of jumping and its consequences with respect to the maximum
+//				height and possible collisions with some box.
+// Parameters:
+//		Level * level;		Pointer to access level class.
+// Return: void
+// -------------------------------------------------------------
+void jump(Level * level) {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: getXPosition()
-	// Description:	Returns the current Jack's position on the X axis.
-	// Return: int
-	// -------------------------------------------------------------
-	int getXPosition() {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: getXPosition()
+// Description:	Returns the current Jack's position on the X axis.
+// Return: int
+// -------------------------------------------------------------
+int getXPosition() {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: getYPosition()
-	// Description:	Returns the current Jack's position on the Y axis.
-	// Return: int
-	// -------------------------------------------------------------
-	int getYPosition() {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: getYPosition()
+// Description:	Returns the current Jack's position on the Y axis.
+// Return: int
+// -------------------------------------------------------------
+int getYPosition() {
+	...
+}
+```  
 
-	```c++
-	// -------------------------------------------------------------
-	// Function: pushBox()
-	// Description:
-	// Return: void
-	// Observations:
-	// 		Funtion not implemented
-	// -------------------------------------------------------------
-	void pushBox() {
-		...
-	}
-	```  
+```c++
+// -------------------------------------------------------------
+// Function: pushBox()
+// Description:
+// Return: void
+// Observations:
+// 		Funtion not implemented
+// -------------------------------------------------------------
+void pushBox() {
+	...
+}
+```  
 
 ### ATRIBUTTES:
-	```c++
-	SDL_Surface * jack;			// Pointer for Jack's graphic elements.
-	int x_position;				// Variable that store Jack's position in X axis.
-	int y_position;				// Variable that store Jack's position in Y axis.
-	bool dead;					// Stores the information whether Jack is dead or not.
-	int lastMove;				// Stores Jack's last move. Used to stop Jack or make him walk again.
-	int lastButOneMove;			// Stores Jack's last but one move. Used to stop Jack or make him walk again.
-	int frame; 					// Variable for animation in drawSelf() method.
-	int	strength;				// Stores Jack's strength to move boxes.
-	int speed;					// Stores Jack's actual horizontal speed.
-	int verticalSpeed;			// Stores Jack's actual vertical Speed.
-	bool jumping;				// Stores the information wheter Jack is jumping or not.
-	```
+```c++
+SDL_Surface * jack;			// Pointer for Jack's graphic elements.
+int x_position;				// Variable that store Jack's position in X axis.
+int y_position;				// Variable that store Jack's position in Y axis.
+bool dead;					// Stores the information whether Jack is dead or not.
+int lastMove;				// Stores Jack's last move. Used to stop Jack or make him walk again.
+int lastButOneMove;			// Stores Jack's last but one move. Used to stop Jack or make him walk again.
+int frame; 					// Variable for animation in drawSelf() method.
+int	strength;				// Stores Jack's strength to move boxes.
+int speed;					// Stores Jack's actual horizontal speed.
+int verticalSpeed;			// Stores Jack's actual vertical Speed.
+bool jumping;				// Stores the information wheter Jack is jumping or not.
+```
 
 ### CONST:
-	```c++
-	static const int ACCELERATION = 1;		// Used to increment the speed in the Y axis;
-	static const int JACK_WIDTH = 38;		// Jack's horizontal size.
-	static const int JACK_HEIGHT = 57;		// Jack's vertical size.
-	```
+```c++
+static const int ACCELERATION = 1;		// Used to increment the speed in the Y axis;
+static const int JACK_WIDTH = 38;		// Jack's horizontal size.
+static const int JACK_HEIGHT = 57;		// Jack's vertical size.
+```
