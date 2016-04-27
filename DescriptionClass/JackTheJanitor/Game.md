@@ -125,10 +125,9 @@
 	// Function: gameOverScreenLoop()
 	// Description: On GameOver screen generates a loop to wait an action of the player. 
 	// Attributes:
-	// 		bool playButton;		Contém informação se o botão de começar um jogo foi clicado ou não.
-    //		bool quitButton;		Contém informação se o botão de sair do jogo foi clicado ou não.
-    //		bool optionsButton;		Contém informação se o botão para acessar o 
-    //								menu de opções foi clicado ou não.
+	// 		bool playButton;		Contains information about Start Game Button it was clicked or not.
+    //		bool quitButton;		Contains information about Exit Game Button it was clicked or not.
+    //		bool optionsButton;		Contains information about Options Game Button it was clicked or not.
 	// Return: void
 	// -------------------------------------------------------------
 	void gameOverScreenLoop() {
@@ -139,7 +138,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: pausingLevel()
-	// Description: Chamada quando o botão de pausar o jogo é clicado durante a execução do jogo.
+	// Description: This function is called when Pause Game Button is clicked on game execution.
 	// Return: void
 	// -------------------------------------------------------------
 	void pausingLevel() {
@@ -150,7 +149,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: pauseScreenDraw()
-	// Description: Origem na função pausingLevel e se destina a apresentar a tela de pausa para o usuário.
+	// Description: From pausingLevel function and it is intended to shows Pause Screen to the user.
 	// Return: void
 	// -------------------------------------------------------------
 	void pauseScreenDraw() {
@@ -161,12 +160,12 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: pauseScreenLoop()
-	// Description: Gera um loop na tela de pausa enquanto espera uma ação do jogador.
+	// Description: Genarates on Pause Screen a loop while waiting an action of the player. 
 	// Attributes: 
-	// 		bool playButton;		Contém informação se o botão de retornar ao jogo foi clicado ou não.
-    //		bool quitButton;		Contém informação se o botão de sair do jogo foi clicado ou não.
-    //		bool optionsButton;		Contém informação se o botão para acessar o 
-    //								menu de opções foi clicado ou não.
+	// 		bool playButton;		Contains information about Return Game Button it was clicked or not.
+    //		bool quitButton;		Contains information about Exit Game Button it was clicked or not.
+    //		bool optionsButton;		Contains information about Options Game Button
+    //								it was clicked or not.
 	// Return: void
 	// -------------------------------------------------------------
 	void pauseScreenLoop() {
@@ -177,8 +176,9 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: initializingScreen()
-	// Description: Incia o processo de mostrar a tela de início do jogo 
-	//				juntamento com a inicialização dos áudios.
+->	// Description: 
+					Inicia o processo de mostrar a tela de início do jogo 
+	//				juntamente com a inicialização dos áudios.
 	// Return: void
 	// -------------------------------------------------------------
 	void initializingScreen() {
@@ -189,8 +189,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: initScreenDraw()
-	// Description: Origem na função initializingScreen e se destina a apresentar a 
-	//				tela de inicio do jogo para o usuário.
+	// Description: From initializingScreen function and it is intended to shows
+	//				Init Screen to user.
 	// Return: void
 	// -------------------------------------------------------------
 	void initScreenDraw() {
@@ -201,12 +201,11 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: initScreenLoop()
-	// Description: Gera um loop na tela de inicio enquanto espera uma ação do jogador.
+	// Description: Generates on Init Screen a loop while waiting an action from user.
 	// Attributes:
-	// 		bool playButton;		Contém informação se o botão de começar um novo jogo foi clicado ou não.
-    //		bool quitButton;		Contém informação se o botão de finalizar o jogo foi clicado ou não.
-    //		bool optionsButton;		Contém informação se o botão para acessar o 
-    //								menu de opções foi clicado ou não.
+	// 		bool playButton;		Contains information about Start New Game Button it was cliked or not.
+    //		bool quitButton;		Contains information about End Game Button it was clicked or not.
+    //		bool optionsButton;		Contains information about Options Menu Button it was clicked or not.
 	// Return: void
 	// -------------------------------------------------------------
 	void initScreenLoop() {
@@ -217,7 +216,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: loadCommonResources()
-	// Description: Faz a inicialização dos recursos comuns de funcionamento do jogo, como som e áudio.
+	// Description: 
+->					Faz a inicialização dos recursos comuns de funcionamento do jogo, como som e áudio.
 	// Return: void
 	// -------------------------------------------------------------
 	void loadCommonResources() {
@@ -228,7 +228,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: releaseCommonResources()
-	// Description: Faz a limpeza e liberação dos recursos comuns de funcionamento do jogo.
+	// Description: Common resoucers are cleaned and released by this function.
 	// Return: void
 	// Observations:
 	// 		Funtion not implemented
@@ -241,7 +241,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: loadProfile()
-	// Description: Carrega um profile que armazena dados de um usuário específico.
+	// Description: Load a profile that stores data for a specific user.
 	// Return: void
 	// Observations:
 	// 		Funtion not implemented
@@ -254,7 +254,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: saveProfile()
-	// Description: Salva um profile do usuário para carregar em outro momento.
+	// Description: A user profile is saved to be used in another time.
 	// Return: void
 	// Observations:
 	// 		Funtion not implemented
@@ -267,26 +267,26 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: loadLevel()
-	// Description: Carrega todas as informações referentes ao nível que o jogador está, 
-	//				carregando também as imagens de cada inimigo, imagem do Jack, 
-	//				quantidade de caixas que cairão durante a execução, áudios e o score.
+	// Description: All informations about user level is loaded, like each enemy image, Jack image, during 					execution quantity of boxes that will fall, audios and score. 
 	// Attributes:
-	//		string level_1_file;		Nome do arquivo da imagem de fundo do nível 1.
-	//	    string level_2_file;		Nome do arquivo da imagem de fundo do nível 2.
-	//	    string level_3_file;		Nome do arquivo da imagem de fundo do nível 3.
-	//	    string level_1_spec;		Nome do arquivo que contém especificações do nível 1.
-	//	    string level_2_spec;		Nome do arquivo que contém especificações do nível 2.
-	//	    string level_3_spec;		Nome do arquivo que contém especificações do nível 3.
-	//	    string currentLevelFile;	Nome do arquivo de imagem do nível que o jogador está.
-	//	    string currentLevelSpec;	Nome do arquivo de especificações do nível que o jogador está.
-	//		ifstream levelFile;			Controla o arquivo de especificações do nível
-    //		string numberOfLevel;		Contém o número no nível lido no levelFile.
-    //		string numberOfBoxes;		Contém o número do caixas que terá no nível, lido no levelFile.
-    //		string numberOfEnemies;		Comtém o número de inimigos que terá no nível, lido no levelFile.
-    //		string maxLines;			Contém a quantidade necessária de linhas de caixas completas 
-    //									para passar de nível, lido no levelFile.
-    //		int nrBoxes;				Contém o valor inteiro provindo da variável numberOfBoxes.
-    //		int nrEnemies;				Contém o valor inteiro provindo da variável numberOfEnemies.
+	//		string level_1_file;		Background filename from level 1.
+	//	    string level_2_file;		Background filename from level 2.
+	//	    string level_3_file;		Background filename from level 3.
+	//	    string level_1_spec;		Filename that contains specifications about level 1.
+	//	    string level_2_spec;		Filename that contains specifications about level 2.
+	//	    string level_3_spec;		Filename that contains specifications about level 3.
+	//	    string currentLevelFile;	Image filename about actual level.
+	//	    string currentLevelSpec;	Filename that contains specifications about acutal level.
+	//		ifstream levelFile;			Controls file of level specifications.
+    //		string numberOfLevel;		It contains the number of level read in levelFile .
+    //		string numberOfBoxes;		Read on levelFile, contains the number of boxes that 
+    //									level will 	have.
+    //		string numberOfEnemies;		Read on levelFile, contains the number of enemies that
+    //									level will have.
+    //		string maxLines;			Read on levelFile, contains the necessary number of lines filled
+    //									with boxes pass the level.
+    //		int nrBoxes;				Contais a integer number stemmed from numberOfBoxes variable.
+    //		int nrEnemies;				Contais a integer value stemmed from numberOfEnemies varible.
 	// Return: void
 	// -------------------------------------------------------------
 	void loadLevel() {
@@ -297,7 +297,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: releaseLevel()
-	// Description: Deleta o nível atual liberando memória para o próximo nível ser carregado.
+	// Description: Actual level is deleted freeing up memory to the next level to load.
+					Deleta o nível atual liberando memória para o próximo nível ser carregado.
 	// Return: void
 	// -------------------------------------------------------------
 	void releaseLevel() {
@@ -308,7 +309,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: updateTimeStep()
-	// Description: Inicia um novo tempo de jogo, executado assim que algum nível termina.
+	// Description: Run so a level ends, initializing a new time of game.
 	// Return: void
 	// -------------------------------------------------------------
 	void updateTimeStep() {
@@ -319,7 +320,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: update()
-	// Description: Executa durante o loop de duração do jogo e atualiza os atributos de controle do mesmo.
+	// Description: Updates atributtes of control on game during the game loop.
 	// Return: void
 	// -------------------------------------------------------------
 	void update() {
@@ -330,7 +331,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: draw()
-	// Description: Concentra a criação e impressão das imagens de fundo de tela de score e do nível. 
+	// Description: Focuses the creation and printing of background images from ScoreScreen
+	//				and LevelScreen.
 	// Return: void
 	// -------------------------------------------------------------
 	void draw() {
@@ -341,7 +343,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: runAI()
-	// Description: Gera as movimentações dos inimigos e as posições que eles irão soltar as caixas.
+	// Description: Generates the movement of enemies and locations where they will drop boxes.
 	// Return: void
 	// -------------------------------------------------------------
 	void runAI() {
@@ -352,8 +354,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: runPhysics()
-	// Description: Executa a física de ações como colisões, quedas, movimentações das caixas e 
-	//				movimentações dos players. 
+	// Description: Collisions, falls, movements from boxes and players, the physics from actions are 		//				executed on here.
 	// Attributes:
 	//		int xinit;		Guarda a posição X de onde inicia o desenho do nível. (Limite mínimo a esquerda)
 	//	    int xrange;		Guarda a posição X de onde termina o desenho do nível. (Limite máximo a direita)
