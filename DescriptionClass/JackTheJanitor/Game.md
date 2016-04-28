@@ -1,5 +1,6 @@
 ## CLASS: Game
-	Description: It's the most important class of the project. It's does all operation need to game start and run, and has control of the operations in the game.
+	Description: It's the most important class of the project. It's does all operation need to game 
+				start and run, and has control of the operations in the game.
 	Observation: Main.cpp call this class.
 
 ### METHODS:
@@ -125,9 +126,12 @@
 	// Function: gameOverScreenLoop()
 	// Description: On GameOver screen generates a loop to wait an action of the player. 
 	// Attributes:
-	// 		bool playButton;		Contains information about Start Game Button it was clicked or not.
-    //		bool quitButton;		Contains information about Exit Game Button it was clicked or not.
-    //		bool optionsButton;		Contains information about Options Game Button it was clicked or not.
+	// 		bool playButton;		Contains information about Start Game Button it was clicked or 
+	//								not.
+    //		bool quitButton;		Contains information about Exit Game Button it was clicked or 
+    //								not.
+    //		bool optionsButton;		Contains information about Options Game Button it was clicked or
+    //								not.
 	// Return: void
 	// -------------------------------------------------------------
 	void gameOverScreenLoop() {
@@ -162,8 +166,10 @@
 	// Function: pauseScreenLoop()
 	// Description: Genarates on Pause Screen a loop while waiting an action of the player. 
 	// Attributes: 
-	// 		bool playButton;		Contains information about Return Game Button it was clicked or not.
-    //		bool quitButton;		Contains information about Exit Game Button it was clicked or not.
+	// 		bool playButton;		Contains information about Return Game Button it was clicked or 
+	//								not.
+    //		bool quitButton;		Contains information about Exit Game Button it was clicked or 
+    //								not.
     //		bool optionsButton;		Contains information about Options Game Button
     //								it was clicked or not.
 	// Return: void
@@ -176,9 +182,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: initializingScreen()
-->	// Description: 
-					Inicia o processo de mostrar a tela de início do jogo 
-	//				juntamente com a inicialização dos áudios.
+	// Description: Initialize the process of show on Initial Screen, alomg with startup of audios.
 	// Return: void
 	// -------------------------------------------------------------
 	void initializingScreen() {
@@ -203,9 +207,12 @@
 	// Function: initScreenLoop()
 	// Description: Generates on Init Screen a loop while waiting an action from user.
 	// Attributes:
-	// 		bool playButton;		Contains information about Start New Game Button it was cliked or not.
-    //		bool quitButton;		Contains information about End Game Button it was clicked or not.
-    //		bool optionsButton;		Contains information about Options Menu Button it was clicked or not.
+	// 		bool playButton;		Contains information about Start New Game Button it was cliked 
+	//								or not.
+    //		bool quitButton;		Contains information about End Game Button it was clicked or 
+    //								not.
+    //		bool optionsButton;		Contains information about Options Menu Button it was clicked or
+    //								not.
 	// Return: void
 	// -------------------------------------------------------------
 	void initScreenLoop() {
@@ -216,8 +223,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: loadCommonResources()
-	// Description: 
-->					Faz a inicialização dos recursos comuns de funcionamento do jogo, como som e áudio.
+	// Description: Initialize common resources for game, like audio and sound.
 	// Return: void
 	// -------------------------------------------------------------
 	void loadCommonResources() {
@@ -267,7 +273,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: loadLevel()
-	// Description: All informations about user level is loaded, like each enemy image, Jack image, during 					execution quantity of boxes that will fall, audios and score. 
+	// Description: All informations about user level is loaded, like each enemy image, Jack image, 						during execution quantity of boxes that will fall, audios and score. 
 	// Attributes:
 	//		string level_1_file;		Background filename from level 1.
 	//	    string level_2_file;		Background filename from level 2.
@@ -283,10 +289,12 @@
     //									level will 	have.
     //		string numberOfEnemies;		Read on levelFile, contains the number of enemies that
     //									level will have.
-    //		string maxLines;			Read on levelFile, contains the necessary number of lines filled
-    //									with boxes pass the level.
-    //		int nrBoxes;				Contais a integer number stemmed from numberOfBoxes variable.
-    //		int nrEnemies;				Contais a integer value stemmed from numberOfEnemies varible.
+    //		string maxLines;			Read on levelFile, contains the necessary number of lines 
+    //									filled with boxes pass the level.
+    //		int nrBoxes;				Contais a integer number stemmed from numberOfBoxes 
+    //									variable.
+    //		int nrEnemies;				Contais a integer value stemmed from numberOfEnemies 
+    //									varible.
 	// Return: void
 	// -------------------------------------------------------------
 	void loadLevel() {
@@ -354,19 +362,21 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: runPhysics()
-	// Description: Collisions, falls, movements from boxes and players, the physics from actions are 		//				executed on here.
+	// Description: Collisions, falls, movements from boxes and players, the physics from actions
+	//				are executed on here.
 	// Attributes:
-	//		int xinit;		Guarda a posição X de onde inicia o desenho do nível. (Limite mínimo a esquerda)
-	//	    int xrange;		Guarda a posição X de onde termina o desenho do nível. (Limite máximo a direita)
-	//	    int jackposx;					Guarda a posição em X do boneco Jack.
-	//	    int jackposy;					Guarda a posição em Y do boneco Jack.
-	//	    int boxMobileBeforeJack;		Guarda a posição onde tem a primeira caixa antes do boneco Jack.
-	//	    int boxMobileAfterJack;			Guarda a posição onde tem a primeira caixa após o boneco Jack.
-	//		int quantidadeDeCaixas;			Contém informação de quantas caixas existem na linha base.
-	//		Box * boxToDelete;				Controla as caixa que serão deletadas quando a linha base 
-	//										está completa com 12 caixas.
-	//		Box * boxTransition;			Controla a caixa que será movida para a esquerda.
-	//		Box * boxTransitionRight;		Controla a caixa que será movida para a direita.
+	//		int xinit;		Saves the X position where you begin drawing level.(minimum left)
+	//	    int xrange;		Saves the X position where you end drawing level.(maximum right)
+	//	    int jackposx;					Keeps Jacks postition on X.
+	//	    int jackposy;					Keeps Jacks position on Y.
+	//	    int boxMobileBeforeJack;		Saves the first box position before Jack.
+	//	    int boxMobileAfterJack;			Saves the first box position after Jack.
+	//		int quantidadeDeCaixas;			Contains information about quantity of boxes on base 
+	//										line.
+	//		Box * boxToDelete;				Controls which boxes will be deleted when tha base line 
+	//										was complete with 12 boxes.	
+	//		Box * boxTransition;			Controls the box will be moved to the left.
+	//		Box * boxTransitionRight;		Controls the box will be moved to the right.
 	// Return: void
 	// -------------------------------------------------------------
 	void runPhysics() {
@@ -403,10 +413,10 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: handleEventMouseButtonUp()
-	// Description: Executa a ação do clique de algum botão do mouse.
-	//				Após pressionar o botão, soltar o botão.
+	// Description: Performs the action of the click of a mouse button.
+	//				After pressing the button, release the button.	
 	// Parameters:
-	//		SDL_Event & event;		Contém a informação de algum ação que aconteceu efetuado pelo usuário.
+	//		SDL_Event & event;		Contains information about some action on mouse made by user.
 	// Return: void
 	// -------------------------------------------------------------
 	void handleEventMouseButtonUp(SDL_Event & event) {
@@ -417,10 +427,10 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: handleEventMouseButtonDown()
-	// Description:	Executa a ação do clique de algum botão do mouse.
-	//				Botão pressionado.
+	// Description:	Performs the click action of some button on mouse.
+	//				Button pressed.
 	// Parameters:
-	//		SDL_Event & event;		Contém a informação de algum ação que aconteceu efetuado pelo usuário.
+	//		SDL_Event & event;		Contains information about some action on mouse made by user.
 	// Return: void
 	// -------------------------------------------------------------
 	void handleEventMouseButtonDown(SDL_Event & event) {
@@ -431,10 +441,10 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: handleEventKeyDown()
-	// Description: Executa a ação do clique de alguma tecla do teclado.
-	//				Botão pressionado.
+	// Description: Performs the action of click in any key on the keyboard.
+	//				Button pressed.
 	// Parameters:
-	//		SDL_Event & event;		Contém a informação de algum ação que aconteceu efetuado pelo usuário.
+	//		SDL_Event & event;		Contains information about some action made by user.
 	// Return: void
 	// -------------------------------------------------------------
 	void handleEventKeyDown(SDL_Event & event) {
@@ -445,10 +455,10 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: handleEventKeyUp()
-	// Description:	Executa a ação do clique de alguma tecla do teclado.
-	//				Após pressionar o botão, soltar o botão.
+	// Description:	Performs the action of click in any key on the keyboard. 
+	//				After pressing the button, release the button.	
 	// Parameters:
-	//		SDL_Event & event;		Contém a informação de algum ação que aconteceu efetuado pelo usuário.
+	//		SDL_Event & event;		Contains information about some action made by user.
 	// Return: void
 	// -------------------------------------------------------------
 	void handleEventKeyUp(SDL_Event & event) {
@@ -459,10 +469,10 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: handleEventType()
-	// Description:	Identifica qual o tipo de ação realizada pelo usuário e envia a mesma para 
-	//				a função específica que irá tratar de acordo.
+	// Description:	Identifies which type of action is made by user and sends to the specific
+	//				function that will treat.
 	// Parameters:
-	//		SDL_Event & event;		Contém a informação de algum ação que aconteceu efetuado pelo usuário.
+	//		SDL_Event & event;		Contains information about some action made by user.
 	// Return: void
 	// -------------------------------------------------------------
 	void handleEventType(SDL_Event & event) {
@@ -473,8 +483,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: handleEvents()
-	// Description: Identifica uma ação do usuário, mouse ou teclado, e chama a função 
-	//				handleEventType para tratar a ação.
+	// Description: Identifies and call handleEventType function to treat an action made by user
+	//				on mouse or keyboard.
 	// Return: void
 	// -------------------------------------------------------------
 	void handleEvents() {
@@ -485,7 +495,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: checkIfSkip()
-	// Description: Verifica se o frame foi carregado e caso contrário espera o mesmo ser carregado.
+	// Description: Checks if frame was loaded, if not wait the frame load.
 	// Return: int
 	// -------------------------------------------------------------
 	int checkIfSkip() {
@@ -496,19 +506,23 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: checkColision()
-	// Description: Realiza as verificações de se houve ou não uma colisão entre o Jack e alguma caixa.
+	// Description: It performs checks whether or not collision between Jack and the boxes.
 	// Parameters:
-	//		Jack * jack;				// Ponteiro para o Jack, usada para acessar as informãções do mesmo.
-	//		std::vector<Box*> boxes;	// Ponteiro para as caixas existentes durante o jogo.
+	//		Jack * jack;				Used to acess informations, it is a pointer to Jack.
+	//		std::vector<Box*> boxes;	Pointer to existing boxes during the game.
 	// Attributes:
-	//		int jackRight;				// Limite e posição x da direita do boneco Jack.
-	//		int jackLeft;				// Limite e posição x da esquerda do boneco Jack.
-	//		int jackTop;				// Limite e posição y da parte superior do Jack.
-	//		int jackBottom;				// Limite e posição y da parte inferior do Jack.
-	//		int boxRight;				// Limite e posição x da direita da caixa a ser verificada.
-	//		int boxLeft;				// Limite e posição x da esquerda da caixa a ser verificada.
-	//		int boxTop;					// Limite e posição y da parte superior da caixa a ser verificada.
-	//		int boxBottom;				// Limite e posição y da parte inferior da caixa a ser verificada.
+	//		int jackRight;				Position and limit x from right side of Jack.
+	//		int jackLeft;				Position and limit x from left side of Jack .
+	//		int jackTop;				Position and limit y from upper side of Jack.
+	//		int jackBottom;				Position and limit y from lower side of Jack.
+	//		int boxRight;				Position and limit x from right side of box to be 
+	//									checked.
+	//		int boxLeft;				Position and limit x from left side of box to be 
+	//									checked.
+	//		int boxTop;					Position and limit y from upper side of box to be 
+	//									checked.
+	//		int boxBottom;				Position and limit y from lower side of box to be 
+	//									checked.
 	// Return: bool
 	// -------------------------------------------------------------
 	bool checkColision(Jack * jack, std::vector<Box*> boxes) {
@@ -519,7 +533,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: isGameFinished()
-	// Description: Verifica se o jogodor requisitou o fechamento do jogo.
+	// Description: Check if player ordered the game closing.
 	// Return: bool
 	// -------------------------------------------------------------
 	bool isGameFinished() {
@@ -530,7 +544,7 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: isLevelFinished()
-	// Description:	Verifica se o jogador terminou o nível momentâneo.
+	// Description:	Check if player end the actual level.
 	// Return: bool
 	// -------------------------------------------------------------
 	bool isLevelFinished() {
@@ -540,39 +554,46 @@
 
 ### ATRIBUTTES:
 	```c++
-	SDL_Surface * screen;					// Screen principal onde serão mostradas os elementos gráficos.
-	SDL_Event event;						// Guarda a ação do usuário caso ela exista.
-	Jack * jack;							// Ponteiro para o boneco Jack guardando suas informações.
-	Level * level;							// Contém informações sobre o nível em que o usuário está jogando.
-	Timer frameTime;						// Controla o funcionamento de tempo e carregamento dos frames.
-	ScoreScreen * score;					// Centraliza as informações da pontuação do jogo.
-	InitScreen * initScreen;				// Guarda as informações da tela inicial.
-	InitScreen * wonScreen;					// Controla a tela de jogo vencido executada ao final dos níveis.
-	PauseScreen * pauseScreen;				// Controla a tela de pause quando está é executada pelo usuário.
-	GameOverScreen * gameOverScreen;		// Controla a tela de game over executada ao final dos níveis.
-	OptionsScreen * optionsScreen;			// Controla a tela de opções.
-	Label * labelPlay;						// Botão responsável por dar Play no jogo.
-	Label * labelOptions;					// Botão responsável por abrir o menu de opções.
-	Label * labelQuit;						// Botão que finaliza o jogo ou cancela a execução de algum nível.
-	Label * labelMute;						// Botão da tela de opções que permite ou não a execução do áudio.
-	Label * labelLoad;						// Botão da tela de opções e que carrega um novo jogo.
-	Label * labelBack;						// Botão da tela de opções que volta para a tela inicial.
-	float FRAME_MILISECOND;					// Contém os milisegundos de transição entre um frame e outro.
-	bool quitGame;							// Informação se o usuário deseja sair ou não do jogo.
-	bool quitLevel;							// Informação se é necessário sair ou não do nível.
-	bool pauseLevel;						// Informação se o jogo está pausado ou não.
-	bool gameOver;							// Informação se o jogador perdeu ou não o jogo.
-	bool gameWon;							// Informação se o jogador ganhou ou não o jogo.
-	int linesDeleted;						// Quantidade de linhas que já foram completadas pelo jogador.
-	int maxLevelLines;						// Quantidade necessária de linhas que é preciso para o 
-											// usuário ganhar o jogo.
-	int actualLevel;						// Contém o número do nível em que o jogador está no momento.
+	SDL_Surface * screen;					// Main Screen that will show graphic elements.
+	SDL_Event event;						// Keeps user action if exists.
+	Jack * jack;							// Pointer that keeps informationa bout Jack.
+	Level * level;							// Keep informations about actual level.
+	Timer frameTime;						// Controls loading and time of frames.
+	ScoreScreen * score;					// Centralizes informations about score on game.
+	InitScreen * initScreen;				// Keep informations about Initial Screen.
+	InitScreen * wonScreen;					// Controls the Won Game Screen which is executed at the
+	 										// end of each level.
+	PauseScreen * pauseScreen;				// Controls the Pause Screen when user execute.
+	GameOverScreen * gameOverScreen;		// Controls the Game Over Screen which is executed at 
+											// the end of each level.
+	OptionsScreen * optionsScreen;			// Controls Options Screen.
+	Label * labelPlay;						// Play Button on game.
+	Label * labelOptions;					// Options Button on game.
+	Label * labelQuit;						// Button that end game or cancels execution of some 
+											// level.
+	Label * labelMute;						// Button from Options Screen that allows audio  
+											// execution or not.
+	Label * labelLoad;						// Button from Options Screen that load a new game.
+	Label * labelBack;						// Button from Options Screen that returns to Initial
+											// Screen.
+	float FRAME_MILISECOND;					// It contains the millisecond transition from one frame
+											// to another
+	bool quitGame;							// Information if the user wants to leave or not the 
+											// game.
+	bool quitLevel;							// Information if necessary leave or not the level.
+	bool pauseLevel;						// Inforamtion if the game is paused or not.
+	bool gameOver;							// Information if the player lost or not the game.
+	bool gameWon;							// Information if the player won or not the game. 
+	int linesDeleted;						// Number of lines that have been completed by the 
+											// player.
+	int maxLevelLines;						// Number of lines that is necessary to won the game.
+	int actualLevel;						// Contains the actual level number of player o game.
 	```  
 
 ### CONST:
 	```c++
-	static const int SCREEN_WIDTH = 854;		// Tamanho em largura da tela do jogo.
-	static const int SCREEN_HEIGHT = 480;		// Tamanho em altura da tela do jogo.
-	static const int SCREEN_BPP = 32;			// Número de bit por pixel permitido na tela.
-	static const int SCREEN_FPS = 60;			// Quantidade de frames permitidos por segundo.
+	static const int SCREEN_WIDTH = 854;		// Size width of the game screen.
+	static const int SCREEN_HEIGHT = 480;		// Size game screen height.
+	static const int SCREEN_BPP = 32;			// Number of bits per pixel permitted in the screen.
+	static const int SCREEN_FPS = 60;			// Number of frames per second allowed.
 	```  
