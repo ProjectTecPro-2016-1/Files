@@ -7,8 +7,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: init()
-	// Description: Function that initialize atributtes on game and calls other function to initalize 	
-	//				graphic properties.
+	// Description: Function that initialize atributtes on game and calls other function to  	
+	//				initalize graphic properties.
 	// Return: void
 	// -------------------------------------------------------------
 	void init() {
@@ -19,7 +19,8 @@
 	```c++
 	// -------------------------------------------------------------
 	// Function: loop()
-	// Description: On game operation generate a cycle. To keeps control of execution inside a function 	//				on game.
+	// Description: On game operation generate a cycle. To keeps control of execution inside a 
+	//				function on game.
 	// Return: void
 	// -------------------------------------------------------------
 	void loop() {
