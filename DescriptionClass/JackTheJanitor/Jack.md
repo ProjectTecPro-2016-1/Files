@@ -13,7 +13,7 @@ Description: Class that describes Jack's actions during the game.
 Jack(std::string filename) {
 	...
 }
-```  
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -24,7 +24,7 @@ Jack(std::string filename) {
 ~Jack() {
 	...
 }
-```  
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -41,7 +41,7 @@ Jack(std::string filename) {
 int setLimit() {
 	...
 }
-```  
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -55,7 +55,7 @@ int setLimit() {
 void drawSelf(SDL_Surface * surface) {
 	...
 }
-```  
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -66,7 +66,7 @@ void drawSelf(SDL_Surface * surface) {
 bool isDead() {
 	...
 }
-```  
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -77,7 +77,7 @@ bool isDead() {
 void die() {
 	...
 }
-```  
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -88,7 +88,106 @@ void die() {
 void setSpriteClips() {
 	...
 }
-```  
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClipsStopped()
+// Description: Sets Jack image stopped.
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpriteClipsStopped() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClipsOneRight()
+// Description: Sets Jack image to right.
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpriteClipsOneRight() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClipsSecondRight()
+// Description: Sets Jack image to right.
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpriteClipsSecondRight() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClipsThirdRight()
+// Description: Sets Jack image to right.
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpriteClipsThirdRight() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClipsJumpRight()
+// Description: Sets Jack image jump to right.
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpriteClipsJumpRight() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClipsOneLeft()
+// Description: Sets Jack image to left.
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpriteClipsOneLeft() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClipsSecondLeft()
+// Description: Sets Jack image to left.
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpriteClipsSecondLeft() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClipsThirdLeft()
+// Description: Sets Jack image to left.
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpriteClipsThirdLeft() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpriteClipsJumpLeft()
+// Description: Sets Jack image jump to left.
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpriteClipsJumpLeft() {
+	...
+}
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -104,7 +203,7 @@ void setSpriteClips() {
 void move(int xBegin, int xRange, int yBegin, int yRange) {
 	...
 }
-```  
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -117,7 +216,7 @@ void move(int xBegin, int xRange, int yBegin, int yRange) {
 void pushMove(int v) {
 	...
 }
-```  
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -130,7 +229,7 @@ void pushMove(int v) {
 void popMove(int v) {
 	...
 }
-```  
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -144,7 +243,33 @@ void popMove(int v) {
 void jump(Level * level) {
 	...
 }
-```  
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: calculatesMaxJumpHeightLeft()
+// Description: Calculates Jack's max jump height left.
+// Parameters:
+//                      Level * level;          Pointer to access level class.
+// Return: int
+// -------------------------------------------------------------
+int Jack::calculatesMaxJumpHeightLeft(Level * level) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: calculatesMaxJumpHeightRight()
+// Description: Calculates Jack's max jump height right.
+// Parameters:
+//                      Level * level;          Pointer to access level class.
+// Return: int
+// -------------------------------------------------------------
+int Jack::calculatesMaxJumpHeightRight(Level * level) {
+	...
+}
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -155,7 +280,49 @@ void jump(Level * level) {
 int getXPosition() {
 	...
 }
-```  
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setXPosition()
+// Description: Return the Jack's position on the X axis.
+// Parameters:
+//      int x_position;          Insert the value of axis X of jack on the attribute that keeps the
+//                                        information
+// Return: void
+// -------------------------------------------------------------
+void Jack::setXPosition(int x_position) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: controlsMaxJump1()
+// Description: Controls Jack's max jump.
+// Parameters:
+//                      int maxJumpHeightLeft;
+//                      int maxJumpHeightRight;
+// Return: void
+// -------------------------------------------------------------
+void Jack::controlsMaxJump1(int maxJumpHeightLeft, int maxJumpHeightRight) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: controlsMaxJump2()
+// Description: Controls Jack's max jump.
+// Parameters:
+//                      int maxJumpHeightLeft;
+//                      int maxJumpHeightRight;
+// Return: void
+// -------------------------------------------------------------
+void Jack::controlsMaxJump1(int maxJumpHeightLeft, int maxJumpHeightRight) {
+	...
+}
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -166,7 +333,213 @@ int getXPosition() {
 int getYPosition() {
 	...
 }
-```  
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setYPosition()
+// Description: Return the Jack's position on the Y axis.
+// Parameters:
+//      int y_position;          Insert the value of axis Y of jack on the attribute that keeps the
+//                                        information
+// Return: void
+// -------------------------------------------------------------
+void Jack::setYPosition(int y_position) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: getSpeed()
+// Description: Return the Jack's speed.
+// Return: int
+// -------------------------------------------------------------
+int Jack::getSpeed() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setSpeed()
+// Description: Return Jack's speed.
+// Parameters:
+//      int speed;
+// Return: void
+// -------------------------------------------------------------
+void Jack::setSpeed(int speed) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: getDead()
+// Description: Return dead Jack.
+// Return: bool
+// -------------------------------------------------------------
+bool Jack::getDead() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setDead()
+// Description: Return dead Jack.
+// Parameters:
+//      bool dead;
+// Return: void
+// -------------------------------------------------------------
+void Jack::setDead(bool dead) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: getVerticalSpeed()
+// Description: Return vertical speed of Jack.
+// Return: void
+// -------------------------------------------------------------
+int Jack::getVerticalSpeed() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setVerticalSpeed()
+// Description: Return vertical speed of Jack.
+// Parameters:
+//      int verticalSpeed;
+// Return: void
+// -------------------------------------------------------------
+void Jack::setVerticalSpeed(int verticalSpeed) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: getJumping()
+// Description: Return Jack jumping.
+// Return: void
+// -------------------------------------------------------------
+bool Jack::getJumping() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setJumping()
+// Description: Return Jack jumping.
+// Parameters:
+//      bool jumping;
+// Return: void
+// -------------------------------------------------------------
+void Jack::setJumping(bool jumping) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: getLastMove()
+// Description: Return Jack's last move.
+// Return: void
+// -------------------------------------------------------------
+int Jack::getLastMove() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setLastMove()
+// Description: Return Jack's last move.
+// Parameters:
+//      int lastMove;
+// Return: void
+// -------------------------------------------------------------
+void Jack::setLastMove(int lastMove) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: getLastButOneMove()
+// Description: Return Jack's last but one move.
+// Return: void
+// -------------------------------------------------------------
+int Jack::getLastButOneMove() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setLastButOneMove()
+// Description: Return Jack's last but one move.
+// Parameters:
+//      int lastButOneMove;
+// Return: void
+// -------------------------------------------------------------
+void Jack::setLastButOneMove(int lastButOneMove) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: getStrength()
+// Description: Return Jack's strength.
+// Return: void
+// -------------------------------------------------------------
+int Jack::getStrength() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setStrength()
+// Description: Return Jack's strength.
+// Parameters:
+//      int strength;
+// Return: void
+// -------------------------------------------------------------
+void Jack::setStrength(int strength) {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: getFrame()
+// Description: Return frame of Jack.
+// Return: void
+// -------------------------------------------------------------
+int Jack::getFrame() {
+	...
+}
+```
+
+```c++
+// -------------------------------------------------------------
+// Function: setFrame()
+// Description: Return frame of Jack.
+// Parameters:
+//      int frame;
+// Return: void
+// -------------------------------------------------------------
+void Jack::setFrame(int frame) {
+	...
+}
+```
 
 ```c++
 // -------------------------------------------------------------
@@ -179,19 +552,19 @@ int getYPosition() {
 void pushBox() {
 	...
 }
-```  
+```
 
 ### ATRIBUTTES:
 ```c++
 SDL_Surface * jack;			// Pointer for Jack's graphic elements.
 int x_position;				// Variable that store Jack's position in X axis.
 int y_position;				// Variable that store Jack's position in Y axis.
-bool dead;					// Stores the information whether Jack is dead or not.
+bool dead;				// Stores the information whether Jack is dead or not.
 int lastMove;				// Stores Jack's last move. Used to stop Jack or make him walk again.
 int lastButOneMove;			// Stores Jack's last but one move. Used to stop Jack or make him walk again.
-int frame; 					// Variable for animation in drawSelf() method.
-int	strength;				// Stores Jack's strength to move boxes.
-int speed;					// Stores Jack's actual horizontal speed.
+int frame; 				// Variable for animation in drawSelf() method.
+int strength;				// Stores Jack's strength to move boxes.
+int speed;				// Stores Jack's actual horizontal speed.
 int verticalSpeed;			// Stores Jack's actual vertical Speed.
 bool jumping;				// Stores the information wheter Jack is jumping or not.
 ```
