@@ -119,7 +119,51 @@
 		...
 	}
 	```  
-	
+		
+	```c++	
+	// -------------------------------------------------------------  
+	// Function: getBoxMessage()
+	// Description: Return box message attribute
+	// Return: SDL_Surface *
+	// -------------------------------------------------------------  
+	SDL_Surface * ScoreScreen::getBoxMessage() {
+	    ...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------  
+	// Function: getgetArmario()
+	// Description: Return armario attribute
+	// Return: SDL_Surface *
+	// -------------------------------------------------------------  
+	SDL_Surface * ScoreScreen::getArmario() {
+	    ...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------  
+	// Function: getScoreMessage()
+	// Description: Return score message attribute
+	// Return: SDL_Surface *
+	// -------------------------------------------------------------  
+	SDL_Surface * ScoreScreen::getScoreMessage() {
+	    ...
+	}
+	```
+
+	```c++
+	// -------------------------------------------------------------  
+	// Function: getScoreFont()
+	// Description: Return score font attribute
+	// Return: SDL_Surface *
+	// -------------------------------------------------------------  
+	TTF_Font * ScoreScreen::getScoreFont() {
+	    ...
+	}
+	```
+
 ### ATTRIBUTES:
 	```c++
 	SDL_Surface * armario;			// Is a surface that contains all informataion about player's 
