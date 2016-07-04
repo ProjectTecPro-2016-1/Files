@@ -103,6 +103,17 @@ bool is_paused() {
 }
 ```  
 
+```c++
+// -------------------------------------------------------------  
+// Function: getPausedTicks()  
+// Description: Returns information about ticks when game is paused
+// Return: bool  
+// -------------------------------------------------------------
+int getPausedTicks() {
+	...
+}
+```
+
 ### ATTRIBUTES:
 ```c++
 int startTicks;			// Saves the time the game lasted or is lasting.
